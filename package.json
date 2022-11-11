@@ -1,12 +1,14 @@
 {
-  "name": "pokemon-tcg-shop",
-  "engines":{ "node": "v16.15.1"},
+  "name": "huaxuan",
+  "engines": {
+    "node": "v16.15.1"
+  },
   "keywords": [
     "example",
     "heroku"
   ],
   "version": "2.0.0",
-  "description": "Some boilerplate code to get you started - get shakin'!",
+  "description": "huaxuan is property of Kaitlyn Huang, developed by Warren Au",
   "main": "index.js",
   "scripts": {
     "build": "webpack",
@@ -22,11 +24,12 @@
     "test:dev:models": "npm run test:dev -- --grep=model",
     "test:dev:routes": "npm run test:dev -- --grep=route"
   },
-  "author": "Fullstack Academy of Code",
+  "author": "Warren Au",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
     "bcrypt": "^5.0.0",
+    "bootstrap": "^5.2.2",
     "compression": "^1.7.3",
     "express": "^4.16.4",
     "history": "^4.9.0",

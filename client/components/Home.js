@@ -10,16 +10,28 @@ export const Home = (props) => {
   console.log(props.auth);
 
   return (
-    <section className="bg-whiteblue container" id="carousel">
+    <main>
+      <section className="container">
       {isLoggedIn ? (
         <div>
           <h3 className="anchor-container">Welcome, {email}</h3>
-          <div className="homepage "></div>
         </div>
       ) : (
-        <div className="homepage "></div>
+        <div className="homepage ">Hello</div>
       )}
     </section>
+    <div className="banner container">
+    </div>
+    <div className="shop container">
+        <row></row>
+        <row>
+          <col><p>123</p></col>
+          <col><p>123</p></col>
+          <col><p>123</p></col>
+        </row>
+    </div>
+    </main>
+    
   );
 };
 

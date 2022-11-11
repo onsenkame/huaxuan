@@ -35,10 +35,11 @@ class Routes extends Component {
 
     return (
       <div>
+        
         {isLoggedIn ? (
           <Switch>
             <Route path="/home" component={Home} />
-            <Route exact path="/products" component={AllProducts} />
+            {/* <Route exact path="/products" component={AllProducts} />
             <Route path="/products/:productId" component={SingleProduct} />
             <Route path="/payment" component={Payment} />
             <Route path="/checkout/edit" component={EditCheckout} />
@@ -47,17 +48,17 @@ class Routes extends Component {
             <Route exact path="/editInfo" component={UserInfo} />
             <Route path="/users" component={AllUsers} />
             <Route path="/login" component={Home} />
-            <Route path="/signup" component={Home} />
+            <Route path="/signup" component={Home} /> */}
           </Switch>
         ) : (
           <Switch>
             <Route path="/home" component={Home} />
             <Route exact path="/" component={Login} />
-            <Route path="/products/:productId" component={SingleProduct} />
+            {/* <Route path="/products/:productId" component={SingleProduct} />
             <Route exact path="/products" component={AllProducts} />
             <Route path="/cart" component={Cart} />
             <Route path="/login" component={Login} />
-            <Route path="/signup" component={Signup} />
+            <Route path="/signup" component={Signup} /> */}
           </Switch>
         )}
       </div>
