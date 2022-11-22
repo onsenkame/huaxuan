@@ -18,7 +18,7 @@ const Navbar = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
       <nav>
       <h1 className="anchor-container">GS: Pokemon TCG Shop</h1>
         {isLoggedIn ? (
-          isAdmin ? (<div>
+        <div>
             {/* The navbar will show these links after you log in */}
             <div className="linkHolder">
               <div className="anchor-container">
@@ -43,49 +43,35 @@ const Navbar = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
                 </a>
               </div>
             </div>
-          </div>)
-
-          :
-          (<div>
-            {/* The navbar will show these links after you log in */}
-            <div className="linkHolder">
-              <div className="anchor-container">
-                <Link to="/home">Home</Link>
-              </div>
-              <div className="anchor-container">
-                <Link to="/products">Products({productsLength})</Link>
-              </div>
-              <div className="anchor-container">
-                <Link to="/cart">Cart({cartItems})</Link>
-              </div>
-              <div className="anchor-container">
-                <Link to="/editInfo">Edit Your Info</Link>
-              </div>
-              <div className="anchor-container">
-                <a href="#" onClick={handleClick}>
-                  Logout
-                </a>
-              </div>
-            </div>
-          </div>)
-        ) : (
-          <div>
-            {/* The navbar will show these links before you log in */}
-            <div className="linkHolder">
-              <div className="anchor-container">
-                <Link to="/home">Home</Link>
-              </div>
-              <div className="anchor-container">
-                <Link to="/products">Products({productsLength})</Link>
-              </div>
-              <div className="anchor-container">
-                <Link to="/cart">Cart</Link>
-              </div>
-              <div className="anchor-container">
-                <Link to="/login">Login / Sign Up</Link>
+          </div>) : (
+          <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+            <div className="container">
+              <a href="#" class="navbar-brand">Frontend Bootcamp</a>
+      
+              <button
+                className="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navmenu"
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
+      
+              <div className="collapse navbar-collapse" id="navmenu">
+                <ul className="navbar-nav ms-auto">
+                  <li className="nav-item">
+                    <a href="#learn" class="nav-link">What You'll Learn</a>
+                  </li>
+                  <li className="nav-item">
+                    <a href="#questions" class="nav-link">Questions</a>
+                  </li>
+                  <li className="nav-item">
+                    <a href="#instructors" class="nav-link">Instructors</a>
+                  </li>
+                </ul>
               </div>
             </div>
-          </div>
+          </nav>
         )}
       </nav>
     </header>
