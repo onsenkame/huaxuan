@@ -46,7 +46,7 @@ const Navbar = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
           </div>) : (
           <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
             <div className="container">
-              <a href="#" class="navbar-brand">Frontend Bootcamp</a>
+              <a href="#" className="navbar-brand">Frontend Bootcamp</a>
       
               <button
                 className="navbar-toggler"
@@ -60,13 +60,13 @@ const Navbar = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
               <div className="collapse navbar-collapse" id="navmenu">
                 <ul className="navbar-nav ms-auto">
                   <li className="nav-item">
-                    <a href="#learn" class="nav-link">What You'll Learn</a>
+                    <a href="#learn" className="nav-link">What You'll Learn</a>
                   </li>
                   <li className="nav-item">
-                    <a href="#questions" class="nav-link">Questions</a>
+                    <a href="#questions" className="nav-link">Questions</a>
                   </li>
                   <li className="nav-item">
-                    <a href="#instructors" class="nav-link">Instructors</a>
+                    <a href="#instructors" className="nav-link">Instructors</a>
                   </li>
                 </ul>
               </div>

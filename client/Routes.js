@@ -53,7 +53,7 @@ class Routes extends Component {
         ) : (
           <Switch>
             <Route path="/home" component={Home} />
-            <Route exact path="/" component={Login} />
+            {/* <Route exact path="/" component={Login} /> */}
             {/* <Route path="/products/:productId" component={SingleProduct} />
             <Route exact path="/products" component={AllProducts} />
             <Route path="/cart" component={Cart} />
