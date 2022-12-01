@@ -2,8 +2,12 @@ import React, { useReducer } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { logout } from "../store";
+import { Container, Row } from "react-bootstrap";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
-const Navbar = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
+const NavbarComp = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
   let items = cart.products || [];
   let cartItems = items.reduce(function (accum, obj) {
     const {
@@ -14,67 +18,50 @@ const Navbar = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
   let productsLength = products.length;
 
   return (
-    <header className="bg-blue">
-      <nav>
-      <h1 className="anchor-container">GS: Pokemon TCG Shop</h1>
-        {isLoggedIn ? (
-        <div>
-            {/* The navbar will show these links after you log in */}
-            <div className="linkHolder">
-              <div className="anchor-container">
-                <Link to="/home">Home</Link>
-              </div>
-              <div className="anchor-container">
-                <Link to="/products">Products({productsLength})</Link>
-              </div>
-              <div className="anchor-container">
-                <Link to="/cart">Cart({cartItems})</Link>
-              </div>
-              <div className="anchor-container">
-                <Link to="/editInfo">Edit Your Info</Link>
-              </div>
+    <Navbar bg="light" expand="lg">
+      <Container>
+        <Container>
+          <Navbar.Brand href="#home">
+            <img
+              alt=""
+              src="/logo.svg"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{" "}
+            Huaxuan
+          </Navbar.Brand>
+          
+        </Container>
 
-              <div className="anchor-container">
-                <Link to="/users">View Users</Link>
-              </div>
-              <div className="anchor-container">
-                <a href="#" onClick={handleClick}>
-                  Logout
-                </a>
-              </div>
-            </div>
-          </div>) : (
-          <nav className="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-            <div className="container">
-              <a href="#" className="navbar-brand">Frontend Bootcamp</a>
-      
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navmenu"
-              >
-                <span className="navbar-toggler-icon"></span>
-              </button>
-      
-              <div className="collapse navbar-collapse" id="navmenu">
-                <ul className="navbar-nav ms-auto">
-                  <li className="nav-item">
-                    <a href="#learn" className="nav-link">What You'll Learn</a>
-                  </li>
-                  <li className="nav-item">
-                    <a href="#questions" className="nav-link">Questions</a>
-                  </li>
-                  <li className="nav-item">
-                    <a href="#instructors" className="nav-link">Instructors</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        )}
-      </nav>
-    </header>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <NavDropdown title="Portfolio" id="basic-nav-dropdown">
+              <h1> Fanarts </h1>
+              <NavDropdown.Item href="#portfolio/genshin">
+                Genshin Impact
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#portfolio/league">
+                League of Legends
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#portfolio/anime">Anime</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#portfolio/originals">
+                Originals
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#portfolio/commissions">
+                Commissions
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="#shop">Shop</Nav.Link>
+            <Nav.Link href="#info">Info</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 
@@ -98,4 +85,4 @@ const mapDispatch = (dispatch) => {
   };
 };
 
-export default connect(mapState, mapDispatch)(Navbar);
+export default connect(mapState, mapDispatch)(NavbarComp);

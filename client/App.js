@@ -1,6 +1,6 @@
 import React from "react";
 
-import Navbar from "./components/Navbar";
+import NavbarComp from "./components/Navbar";
 import Routes from "./Routes";
 import Footer from "./components/Footer";
 
@@ -8,7 +8,7 @@ const App = () => {
   return (
     <div className="bg-white">
       <div>
-        <Navbar />
+        <NavbarComp />
         <Routes />
         <Footer />
       </div>
