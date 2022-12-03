@@ -2,28 +2,30 @@ import React, { useReducer } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import { logout } from "../store";
+import { Container, Row, Col } from "react-bootstrap";
+
 
 const Footer = () => {
   
     return (
-      <header className="bg-blue">
-        <nav>
-            <div>
-              {/* The navbar will show these links before you log in */}
-              <div className="linkHolder">
-                <div className="anchor-container">
-                  <Link to="/home">Home</Link>
-                </div>
-                <div className="anchor-container">
-                  <Link to="/cart">Cart</Link>
-                </div>
-                <div className="anchor-container">
-                  <Link to="/login">Login / Sign Up</Link>
-                </div>
-              </div>
+      <footer className="footer">
+      <Container>
+        <Row className="align-items-center">
+          <MailchimpForm />
+          <Col size={12} sm={6}>
+            <img src={logo} alt="Logo" />
+          </Col>
+          <Col size={12} sm={6} className="text-center text-sm-end">
+            <div className="social-icon">
+              <a href="#"><img src={navIcon1} alt="Icon" /></a>
+              <a href="#"><img src={navIcon2} alt="Icon" /></a>
+              <a href="#"><img src={navIcon3} alt="Icon" /></a>
             </div>
-        </nav>
-      </header>
+            <p>Copyright 2022. All Rights Reserved</p>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
     );
   };
   
