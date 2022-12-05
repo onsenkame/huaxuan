@@ -10,8 +10,7 @@ const {
  *      match the models, and populates the database.
  */
 
-pokemon.configure({ apiKey: "d4d5f2db-a789-46db-a495-a503876544ed" });
-
+ 
 async function seed() {
   await db.sync({ force: true }); // clears db and matches models to tables
   console.log("db synced!");
