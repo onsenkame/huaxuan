@@ -1,5 +1,5 @@
 "use strict";
-const pokemon = require("pokemontcgsdk");
+
 const {
   db,
   models: { User, Product, Order },
