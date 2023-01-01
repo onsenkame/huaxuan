@@ -9,7 +9,7 @@ const Footer = () => {
   
     return (
       <footer className="footer">
-      <Container>
+      <Container className="bg-dark text-white">
         <Row className="align-items-center">
           <Col size={12} sm={6}>
           <img
@@ -38,7 +38,7 @@ const Footer = () => {
             /></a>
               <a href="#"><img
               alt=""
-              src="/logo.svg"
+              src="/img/nav-icon3.svg"
               width="30"
               height="30"
               className="d-inline-block align-top"

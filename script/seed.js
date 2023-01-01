@@ -28,34 +28,20 @@ async function seed() {
       if (card.cardmarket.prices.averageSellPrice) return card;
     }
   });
-
-  const [yj, ethan, warren, ryan] = await Promise.all([
-    User.create({
-      email: "ethan@123.com",
-      password: "Hello123!!",
-      firstName: "Ethan",
-      lastName: "Nair",
-      userType: "admin",
-    }),
-    User.create({
-      email: "a920cyj@gmail.com",
-      password: "123",
-      firstName: "Yeun Jae",
-      lastName: "Chung",
-      userType: "admin",
-    }),
+ 
+  const [kait, warren] = await Promise.all([
     User.create({
       email: "onsenkame@gmail.com",
-      password: "Hello123!!",
+      password: "password",
       firstName: "Warren",
       lastName: "Au",
       userType: "admin",
     }),
     User.create({
-      email: "rscoville29@gmail.com",
-      password: "Hello123!!",
-      firstName: "Ryan",
-      lastName: "Scoville",
+      email: "kaitlynhuang0@gmail.com ",
+      password: "password",
+      firstName: "Kaitlyn",
+      lastName: "Huang",
       userType: "admin",
     }),
   ]);
