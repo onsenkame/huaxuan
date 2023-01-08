@@ -38,6 +38,7 @@
     "pg": "^8.5.1",
     "pokemontcgsdk": "^2.0.0",
     "react-bootstrap": "^2.6.0",
+    "react-router-hash-link": "^2.4.3",
     "sequelize": "^6.3.5"
   },
   "devDependencies": {

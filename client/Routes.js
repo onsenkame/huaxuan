@@ -38,7 +38,7 @@ class Routes extends Component {
         
         {isLoggedIn ? (
           <Switch>
-            <Route path="/home" component={Home} />
+            <Route path="/" component={Home} />
             {/* <Route exact path="/products" component={AllProducts} />
             <Route path="/products/:productId" component={SingleProduct} />
             <Route path="/payment" component={Payment} />
@@ -52,7 +52,7 @@ class Routes extends Component {
           </Switch>
         ) : (
           <Switch>
-            <Route path="/home" component={Home} />
+            <Route path="/" component={Home} />
             {/* <Route exact path="/" component={Login} /> */}
             {/* <Route path="/products/:productId" component={SingleProduct} />
             <Route exact path="/products" component={AllProducts} />

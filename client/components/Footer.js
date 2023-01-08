@@ -9,7 +9,7 @@ const Footer = () => {
   
     return (
       <footer className="footer">
-      <Container className="bg-dark text-white">
+      <Container className="bg-light">
         <Row className="align-items-center">
           <Col size={12} sm={6}>
           <img
@@ -24,21 +24,7 @@ const Footer = () => {
             <div className="social-icon">
               <a href="#"><img
               alt=""
-              src="/logo.svg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            /></a>
-              <a href="#"><img
-              alt=""
-              src="/logo.svg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-            /></a>
-              <a href="#"><img
-              alt=""
-              src="/img/nav-icon3.svg"
+              src="/img/insta-black.svg"
               width="30"
               height="30"
               className="d-inline-block align-top"
