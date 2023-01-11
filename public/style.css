@@ -166,6 +166,10 @@ col {
 
 .fanart-banner {
   background-image: url('img/huaxuanimg/temp_cover.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 50vh;
+  object-fit: contain;
 }
 
 .homepage {
@@ -177,6 +181,12 @@ body::before {
   display: block;
   content: '';
   height: 60px;
+}
+
+.square {
+    flex: 1;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 #map {
