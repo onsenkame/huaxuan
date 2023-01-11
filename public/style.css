@@ -1,11 +1,15 @@
 body {
   font-family: sans-serif;
-  background-color: #93BFE7;
+  background-color: #3cff00;
 
 }
 
 ul {
   display: flex;
+}
+
+p {
+  background-color: red;
 }
 
 header {
@@ -127,26 +131,7 @@ margin: 5px;
   background-image: url('Pokeshop-logo.png');
   z-index: 10;
 }
-.bg-white {
-  background-color: #fff;
-  padding: 10px 30px 30px 30px;
-  border-radius: 1em 1em 1em 1em;
-}
 
-.bg-whiteblue {
-  background-color: #fff;
-  background-image: url('pattern-white-blue.jpg');
-}
-
-.bg-blue {
-  background-color: #93BFE7;
-  background-image: url('pattern-blue.jpg');
-}
-
-.bg-green {
-  background-color: #93BFE7;
-  background-image: url('pattern-green.jpg');
-}
 
 .container {
   display: flex;
@@ -179,8 +164,13 @@ col {
 
 }
 
+.fanart-banner {
+  background-image: url('img/huaxuanimg/temp_cover.jpg');
+}
+
 .homepage {
-padding-top: 300px;
+  padding-top: 1rem;
+background-color: orange;
 }
 
 body::before {
