@@ -4,7 +4,8 @@ module.exports = {
   ],
   output: {
     path: __dirname,
-    filename: './public/bundle.js'
+    // filename: './public/bundle.js',
+    publicPath:'/dist'
   },
   devtool: 'source-map',
   module: {
