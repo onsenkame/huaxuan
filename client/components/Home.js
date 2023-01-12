@@ -123,15 +123,15 @@ export const Home = (props) => {
           <div className="homepage ">
             <section className="banner" id="home">
               <Container>
-                <Row id="fanarts">
+                <Row className="space">
                   <Col className="fanart-banner">
                     <div className="banner-text center">
-                      <h1>Fanarts</h1>
-                      <h2>A collection of fanarts</h2>
+                      <h1>Portfolio</h1>
+                      <h2>A collection of works</h2>
                     </div>
                   </Col>
                 </Row>
-                <Row className="rowpad">
+                <Row id="fanarts" className="rowpad">
                   {fanart.map((art) => (
                     <Col xs={12} md={6} xl={4} key={art.id} className="colpad">
                       <img
@@ -147,7 +147,7 @@ export const Home = (props) => {
                     </Col>
                   ))}
                 </Row>
-                <Row id="originals">
+                <Row id="originals" className="space">
                   <Col className="fanart-banner">
                     <div className="banner-text center">
                       <h1>Originals</h1>
@@ -171,7 +171,7 @@ export const Home = (props) => {
                     </Col>
                   ))}
                 </Row>
-                <Row id="shop">
+                <Row id="shop" className="space">
                   <Col className="fanart-banner">
                     <div className="banner-text center">
                       <h1>Shop</h1>
@@ -190,7 +190,7 @@ export const Home = (props) => {
                     </Col>
                   ))}
                 </Row>
-                <Row id="info">
+                <Row id="info" className="space">
                   <Col xs={12} md={6} xl={6}>
                     <img src="/img/huaxuanimg/logotemp.png" className="img-fluid" />
                   </Col>
@@ -199,21 +199,22 @@ export const Home = (props) => {
                     <p className="center">A collection of fanarts
                     she does things
                     and they are cool so give her your money</p>
-                  </Col>
-                </Row>
-                <Row id="contact">
-                <Col xs={12} md={12} xl={12}>
                     <h1>Contact Huaxuan</h1>
                     <p className="center">Hit her up at blah blah</p>
                     <p className="center">Find her on <a href="https://www.instagram.com/hua.xuann/">Instagram</a></p>
                   </Col>
                 </Row>
+                <Row id="contact">
+                <Col xs={12} md={12} xl={12}>
+                    
+                  </Col>
+                </Row>
               </Container>
             </section>
-            <Modal size="lg" show={show} onHide={handleClose}>
-              <Modal.Header closeButton>
+            <Modal size="lg" show={show} onHide={handleClose} centered>
+              {/* <Modal.Header closeButton>
                 <Modal.Title>{modalTitle}</Modal.Title>
-              </Modal.Header>
+              </Modal.Header> */}
               <img src={modalImage} className="img-fluid" />
             </Modal>
           </div>

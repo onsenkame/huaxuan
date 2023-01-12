@@ -176,6 +176,10 @@ col {
   padding: .5em 0em;
 }
 
+.space {
+  padding-top: 10em;
+}
+
 .homepage {
   padding-top: 1rem;
   background-color: white;
