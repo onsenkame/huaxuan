@@ -36,78 +36,80 @@ const NavbarComp = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
   };
 
   return (
-    <Navbar bg="navbar sticky-top navbar-light bg-light" expand="lg">
+    <Navbar bg="navbar navbar-light bg-light" expand="lg">
       <Container>
-        <Container>
-          <Navbar.Brand href="/">
+          <Container className="justify-content-left">
+            <Navbar.Brand href="/">
+              <img
+                alt=""
+                src="/img/huaxuanimg/logotemp.png"
+                width="60"
+                height="60"
+                className="d-inline-block align-top"
+              />
+              <img
+                alt=""
+                src="/img/huaxuanimg/huaxuan.png"
+                width="220"
+                height="60"
+                className="d-inline-block align-top"
+              />
+            </Navbar.Brand>
+          </Container>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link
+                href="#portfolio"
+                className={
+                  activeLink === "portfolio"
+                    ? "active navbar-link"
+                    : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("portfolio")}
+              >
+                Portfolio
+              </Nav.Link>
+              <Nav.Link
+                href="#shop"
+                className={
+                  activeLink === "shop" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("shop")}
+              >
+                Shop
+              </Nav.Link>
+              <Nav.Link
+                href="#info"
+                className={
+                  activeLink === "info" ? "active navbar-link" : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("info")}
+              >
+                Info
+              </Nav.Link>
+              <Nav.Link
+                href="#contact"
+                className={
+                  activeLink === "contact"
+                    ? "active navbar-link"
+                    : "navbar-link"
+                }
+                onClick={() => onUpdateActiveLink("contact")}
+              >
+                Contact
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+          <a href="https://www.instagram.com/hua.xuann/">
             <img
-              alt=""
-              src="/img/huaxuanimg/logotemp.png"
-              width="60"
-              height="60"
-              className="d-inline-block align-top"
-            />
-            <img
-              alt=""
-              src="/img/huaxuanimg/huaxuan.png"
-              width="220"
-              height="60"
-              className="d-inline-block align-top"
-            />
-            <a href="https://www.instagram.com/hua.xuann/"><img
               alt=""
               src="/img/insta-black.svg"
               width="60"
               height="60"
               className="d-inline-block align-top"
-            /></a>
-            
-          </Navbar.Brand>
-        </Container>
-
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link
-              href="#portfolio"
-              className={
-                activeLink === "portfolio"
-                  ? "active navbar-link"
-                  : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("portfolio")}
-            >
-              Portfolio
-            </Nav.Link>
-            <Nav.Link
-              href="#shop"
-              className={
-                activeLink === "shop" ? "active navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("shop")}
-            >
-              Shop
-            </Nav.Link>
-            <Nav.Link
-              href="#info"
-              className={
-                activeLink === "info" ? "active navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("info")}
-            >
-              Info
-            </Nav.Link>
-            <Nav.Link
-              href="#contact"
-              className={
-                activeLink === "contact" ? "active navbar-link" : "navbar-link"
-              }
-              onClick={() => onUpdateActiveLink("contact")}
-            >
-              Contact
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
+            />
+          </a>
       </Container>
     </Navbar>
   );

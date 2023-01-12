@@ -107,7 +107,7 @@ export const Home = (props) => {
                 </Row>
                 <Row className="rowpad">
                   {fanart.map((art) => (
-                    <Col xs={12} md={6} xl={4} key={art.id} className="colpad">
+                    <Col xs={12} md={4} xl={4} key={art.id} className="colpad">
                       <img
                         src={art.img}
                         className="img-fluid square"
@@ -121,32 +121,8 @@ export const Home = (props) => {
                     </Col>
                   ))}
                 </Row>
-                {/* <Row id="originals" className="space">
-                  <Col className="fanart-banner">
-                    <div className="banner-text center">
-                      <h1>Originals</h1>
-                      <h2>A collection of originals</h2>
-                    </div>
-                  </Col>
-                </Row>
-                <Row className="rowpad">
-                  {original.map((art) => (
-                    <Col xs={12} md={6} xl={4} key={art.id} className="colpad">
-                      <img
-                        src={art.img}
-                        className="img-fluid square"
-                        alt="Responsive image"
-                        onClick={() => {
-                          titleSet(art.title);
-                          imageSet(art.img);
-                          handleShow();
-                        }}
-                      />
-                    </Col>
-                  ))}
-                </Row> */}
                 <Row id="shop" className="space">
-                  <Col className="fanart-banner banpad">
+                  <Col className="shop-banner banpad">
                     <div className="banner-text center">
                       <h1>Shop</h1>
                       <h2>Coming soon!</h2>
@@ -155,10 +131,10 @@ export const Home = (props) => {
                 </Row>
                 <Row className="rowpad">
                   {shop.map((art) => (
-                    <Col xs={12} md={6} xl={4} key={art.id} className="colpad">
+                    <Col xs={12} md={4} xl={4} key={art.id} className="colpad">
                       <img
                         src={art.img}
-                        className="img-fluid square"
+                        className="img-fluid square grey-out-layer "
                         alt="Responsive image"
                       />
                     </Col>
@@ -166,16 +142,21 @@ export const Home = (props) => {
                 </Row>
                 <Row id="info" className="space">
                   <Col xs={12} md={6} xl={6}>
-                    <img src="/img/huaxuanimg/logotemp.png" className="img-fluid" />
+                    <img src="/img/huaxuanimg/logotemp.png" className="img-fluid"/>
                   </Col>
                   <Col xs={12} md={6} xl={6}>
+                    <Row className="center half">
                     <h1>About Huaxuan</h1>
-                    <p className="center">A collection of fanarts
-                    she does things
-                    and they are cool so give her your money</p>
+                    <p className="center">Webcomic artist and illustrator, Huaxuan works their talent in many ways,
+                    <br/>from digital illustration to ingenious works of physical art. 
+                    <br/>Professionally illustrating for over a decade, 
+                    <br/>their pursuit of their true style is as unending as the depths of their creativity.</p>
+                    </Row>
+                    <Row className="center s-space">
                     <h1>Contact Huaxuan</h1>
-                    <p className="center">Hit her up at blah blah</p>
-                    <p className="center">Find her on <a href="https://www.instagram.com/hua.xuann/">Instagram</a></p>
+                    <h3>Email them at: rxuanhuang@gmail.com</h3>
+                    <h3>Find them on Instagram as <a href="https://www.instagram.com/hua.xuann/">hua.xuann</a> </h3>
+                    </Row>
                   </Col>
                 </Row>
                 <Row id="contact">
@@ -186,9 +167,6 @@ export const Home = (props) => {
               </Container>
             </section>
             <Modal size="lg" show={show} onHide={handleClose} centered>
-              {/* <Modal.Header closeButton>
-                <Modal.Title>{modalTitle}</Modal.Title>
-              </Modal.Header> */}
               <img src={modalImage} className="img-fluid" />
             </Modal>
           </div>
