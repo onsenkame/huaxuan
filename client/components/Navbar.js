@@ -37,7 +37,7 @@ const NavbarComp = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
 
 
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="navbar sticky-top navbar-light bg-light" expand="lg">
       <Container>
         <Container>
           <Navbar.Brand href="/">
@@ -56,26 +56,14 @@ const NavbarComp = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <NavDropdown title="Portfolio" id="basic-nav-dropdown">
-              <h1> Fanarts </h1>
-              <NavDropdown.Item href="#portfolio/genshin" 
-              className={activeLink === 'portfolio/genshin' ? 'active navbar-link' : 'navbar-link'} 
-              onClick={() => onUpdateActiveLink('portfolio/genshin')}>
-                Genshin Impact
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#portfolio/league">
-                League of Legends
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#portfolio/anime">Anime</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#portfolio/originals">
-                Originals
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#portfolio/commissions">
-                Commissions
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="#fanarts" 
+            className={activeLink === 'fanarts' ? 'active navbar-link' : 'navbar-link'} 
+            onClick={() => onUpdateActiveLink('fanarts')}
+            >Fanarts</Nav.Link>
+            <Nav.Link href="#originals" 
+            className={activeLink === 'originals' ? 'active navbar-link' : 'navbar-link'} 
+            onClick={() => onUpdateActiveLink('originals')}
+            >Originals</Nav.Link>
             <Nav.Link href="#shop" 
             className={activeLink === 'shop' ? 'active navbar-link' : 'navbar-link'} 
             onClick={() => onUpdateActiveLink('shop')}

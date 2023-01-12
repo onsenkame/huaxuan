@@ -127,12 +127,6 @@ margin: 5px;
   margin-right: 5px;
 }
 
-.logo {
-  background-image: url('Pokeshop-logo.png');
-  z-index: 10;
-}
-
-
 .container {
   display: flex;
   flex-direction: column;
@@ -169,18 +163,27 @@ col {
   background-size: cover;
   width: 100vw;
   height: 50vh;
-  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.colpad {
+  padding: .5em;
+}
+
+.rowpad {
+  padding: .5em 0em;
 }
 
 .homepage {
   padding-top: 1rem;
-background-color: orange;
+  background-color: orange;
 }
 
 body::before {
   display: block;
   content: '';
-  height: 60px;
 }
 
 .square {

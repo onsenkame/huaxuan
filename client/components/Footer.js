@@ -14,7 +14,7 @@ const Footer = () => {
           <Col size={12} sm={6}>
           <img
               alt=""
-              src="/logo.svg"
+              src="/img/huaxuanimg/logotemp.png"
               width="30"
               height="30"
               className="d-inline-block align-top"
@@ -22,7 +22,7 @@ const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-              <a href="#"><img
+              <a href="https://www.instagram.com/hua.xuann/"><img
               alt=""
               src="/img/insta-black.svg"
               width="30"
