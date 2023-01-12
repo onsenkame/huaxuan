@@ -43,41 +43,42 @@ const NavbarComp = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
             <img
               alt=""
               src="/img/huaxuanimg/logotemp.png"
-              width="30"
-              height="30"
+              width="60"
+              height="60"
               className="d-inline-block align-top"
-            />{" "}
-            Huaxuan
+            />
+            <img
+              alt=""
+              src="/img/huaxuanimg/huaxuan.png"
+              width="220"
+              height="60"
+              className="d-inline-block align-top"
+            />
+            <a href="https://www.instagram.com/hua.xuann/"><img
+              alt=""
+              src="/img/insta-black.svg"
+              width="60"
+              height="60"
+              className="d-inline-block align-top"
+            /></a>
+            
           </Navbar.Brand>
         </Container>
 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <NavDropdown title="Portfolio" id="basic-nav-dropdown">
-              <NavDropdown.Item
-                href="#fanarts"
-                className={
-                  activeLink === "fanarts"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("fanarts")}
-              >
-                Fanarts
-              </NavDropdown.Item>
-              <NavDropdown.Item
-                href="#originals"
-                className={
-                  activeLink === "originals"
-                    ? "active navbar-link"
-                    : "navbar-link"
-                }
-                onClick={() => onUpdateActiveLink("originals")}
-              >
-                Originals
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link
+              href="#portfolio"
+              className={
+                activeLink === "portfolio"
+                  ? "active navbar-link"
+                  : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("portfolio")}
+            >
+              Portfolio
+            </Nav.Link>
             <Nav.Link
               href="#shop"
               className={

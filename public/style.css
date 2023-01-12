@@ -159,8 +159,9 @@ col {
 }
 
 .fanart-banner {
-  background-image: url('img/huaxuanimg/temp_cover.jpg');
+  background-image: url('/img/huaxuanimg/v2/Fanarts/EnkiduBig.jpg');
   background-size: cover;
+  background-position: center;
   width: 100vw;
   height: 50vh;
   display: flex;
@@ -174,6 +175,10 @@ col {
 
 .rowpad {
   padding: .5em 0em;
+}
+
+.banpad {
+  padding: 0em .5em;
 }
 
 .space {
