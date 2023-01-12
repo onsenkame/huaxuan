@@ -1,6 +1,6 @@
 body {
   font-family: sans-serif;
-  background-color: #3cff00;
+  background-color: white;
 
 }
 
@@ -9,7 +9,7 @@ ul {
 }
 
 p {
-  background-color: red;
+  background-color: white;
 }
 
 header {
@@ -178,7 +178,7 @@ col {
 
 .homepage {
   padding-top: 1rem;
-  background-color: orange;
+  background-color: white;
 }
 
 body::before {
