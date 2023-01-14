@@ -16,6 +16,11 @@ p {
   background-color: white;
 }
 
+a {
+  font-family: maitree !important;
+  font-weight: bold;
+}
+
 .navbar-link {
   font-family: maitree;
   font-size: larger;
@@ -175,17 +180,43 @@ col {
   width: 100px;
 }
 
-.fanart-banner {
+.fanart-banner::before {
+  content: "";
   background-image: url('/img/huaxuanimg/v2/Fanarts/EnkiduBig.jpg');
   background-size: cover;
   background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.fanart-banner {
+  position: relative; 
   width: 100vw;
   height: 50vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   margin-left: .5em;
   margin-right: .5em;
+  -webkit-filter: brightness(100%);
+}
+
+.fanart-banner:hover::before {
+  -webkit-filter: brightness(50%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.banner-text {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .shop-banner {
@@ -213,6 +244,22 @@ col {
   align-items: center;
   opacity: 0.5;
   filter: alpha(opacity=30)
+}
+
+.portfolio-effect-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-effect img {
+  width: 100%;
+  height: auto;
+  transform: scale(1) translateY(0);
+}
+
+.portfolio-effect:hover {
+  transform: scale(1.2) translateY(20px);
+  transition: transform 0.4s ease;
 }
 
 .colpad {

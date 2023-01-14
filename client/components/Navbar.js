@@ -101,7 +101,7 @@ const NavbarComp = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-          <a href="https://www.instagram.com/hua.xuann/">
+          <a href="https://www.instagram.com/hua.xuann/" target="_blank">
             <img
               alt=""
               src="/img/insta-black.svg"

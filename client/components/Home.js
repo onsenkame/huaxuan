@@ -79,8 +79,8 @@ export const Home = (props) => {
     },
     {
       id: 3,
-      title: "Festival",
-      img: "/img/huaxuanimg/v2/Originals/Festival 11.23.22.jpg",
+      title: "Klee",
+      img: "/img/huaxuanimg/Shop Pics/Klee low res.jpg",
     },
   ];
 
@@ -98,17 +98,18 @@ export const Home = (props) => {
                 <Row>
                   <Col className="fanart-banner">
                     <div className="banner-text center">
-                      <h1>Portfolio</h1>
-                      <h2>A collection of works</h2>
+                      <h1 className="banner-text">Portfolio</h1>
+                      <h2 className="banner-text">A collection of works</h2>
                     </div>
                   </Col>
                 </Row>
                 <Row className="rowpad">
                   {fanart.map((art) => (
                     <Col xs={12} md={4} xl={4} key={art.id} className="colpad">
+                      <div className="portfolio-effect-container">
                       <img
                         src={art.img}
-                        className="img-fluid square"
+                        className="img-fluid square portfolio-effect"
                         alt="Responsive image"
                         onClick={() => {
                           titleSet(art.title);
@@ -116,6 +117,7 @@ export const Home = (props) => {
                           handleShow();
                         }}
                       />
+                      </div>
                     </Col>
                   ))}
                 </Row>
@@ -148,27 +150,30 @@ export const Home = (props) => {
                   <Col xs={12} md={6} xl={6}>
                     <Row className="center half">
                       <Col>
-                        <h1>About Huaxuan</h1>
+                        <h1 className="s-space">About HuaXuan</h1>
                         <p className="center">
                           HuaXuan spends many of their waking hours (few as they
-                          might be) creating original illustrations, coloring
-                          and lining webcomics as an assistant, and Asian
+                          might be) <br/> creating original illustrations, coloring
+                          and lining webcomics as an assistant, and... <br/> Asian
                           squatting by their cricut watching stickers being cut.
-                          Conventions sold at - Animefest, and many more to
+                          <br/><br/>Conventions sold at - Animefest, and many more to
                           come!
                         </p>
                       </Col>
                     </Row>
                     <Row className="center s-space">
                       <Col>
-                        <h1>Contact Huaxuan</h1>
-                        <h3>Email them at: rxuanhuang@gmail.com</h3>
-                        <h3>
+                        <h1>Contact HuaXuan</h1>
+                        <h4>Email them at: rxuanhuang@gmail.com</h4>
+                        <h4>
                           Find them on Instagram as{" "}
-                          <a href="https://www.instagram.com/hua.xuann/">
+                          <a
+                            href="https://www.instagram.com/hua.xuann/"
+                            target="_blank"
+                          >
                             hua.xuann
                           </a>{" "}
-                        </h3>
+                        </h4>
                       </Col>
                     </Row>
                   </Col>
