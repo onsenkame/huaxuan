@@ -22,7 +22,7 @@ export const Home = (props) => {
     {
       id: 1,
       title: "Power",
-      img: "/img/huaxuanimg/v2/Fanarts/CSM Power 11.9.22.jpg"
+      img: "/img/huaxuanimg/v2/Fanarts/CSM Power 11.9.22.jpg",
     },
     {
       id: 2,
@@ -64,9 +64,7 @@ export const Home = (props) => {
       title: "Festival",
       img: "/img/huaxuanimg/v2/Originals/Festival 11.23.22.jpg",
     },
-    
   ];
-
 
   const shop = [
     {
@@ -142,27 +140,41 @@ export const Home = (props) => {
                 </Row>
                 <Row id="info" className="space">
                   <Col xs={12} md={6} xl={6}>
-                    <img src="/img/huaxuanimg/logotemp.png" className="img-fluid"/>
+                    <img
+                      src="/img/huaxuanimg/HuaXuanppf.png"
+                      className="img-fluid"
+                    />
                   </Col>
                   <Col xs={12} md={6} xl={6}>
                     <Row className="center half">
-                    <h1>About Huaxuan</h1>
-                    <p className="center">Webcomic artist and illustrator, Huaxuan works their talent in many ways,
-                    <br/>from digital illustration to ingenious works of physical art. 
-                    <br/>Professionally illustrating for over a decade, 
-                    <br/>their pursuit of their true style is as unending as the depths of their creativity.</p>
+                      <Col>
+                        <h1>About Huaxuan</h1>
+                        <p className="center">
+                          HuaXuan spends many of their waking hours (few as they
+                          might be) creating original illustrations, coloring
+                          and lining webcomics as an assistant, and Asian
+                          squatting by their cricut watching stickers being cut.
+                          Conventions sold at - Animefest, and many more to
+                          come!
+                        </p>
+                      </Col>
                     </Row>
                     <Row className="center s-space">
-                    <h1>Contact Huaxuan</h1>
-                    <h3>Email them at: rxuanhuang@gmail.com</h3>
-                    <h3>Find them on Instagram as <a href="https://www.instagram.com/hua.xuann/">hua.xuann</a> </h3>
+                      <Col>
+                        <h1>Contact Huaxuan</h1>
+                        <h3>Email them at: rxuanhuang@gmail.com</h3>
+                        <h3>
+                          Find them on Instagram as{" "}
+                          <a href="https://www.instagram.com/hua.xuann/">
+                            hua.xuann
+                          </a>{" "}
+                        </h3>
+                      </Col>
                     </Row>
                   </Col>
                 </Row>
                 <Row id="contact">
-                <Col xs={12} md={12} xl={12}>
-                    
-                  </Col>
+                  <Col xs={12} md={12} xl={12}></Col>
                 </Row>
               </Container>
             </section>
