@@ -99,7 +99,7 @@ export const Home = (props) => {
                   <Col className="fanart-banner">
                     <div className="banner-text center">
                       <h1 className="banner-text">Portfolio</h1>
-                      <h2 className="banner-text">A collection of works</h2>
+                      <h2 className="banner-text">A collection of fanarts and originals</h2>
                     </div>
                   </Col>
                 </Row>
@@ -134,7 +134,7 @@ export const Home = (props) => {
                     <Col xs={12} md={4} xl={4} key={art.id} className="colpad">
                       <img
                         src={art.img}
-                        className="img-fluid square grey-out-layer "
+                        className="img-fluid square grey-out-layer"
                         alt="Responsive image"
                       />
                     </Col>
