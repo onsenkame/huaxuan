@@ -190,6 +190,11 @@ col {
   right: 0px;
   bottom: 0px;
   left: 0px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .fanart-banner {
@@ -202,15 +207,12 @@ col {
   margin-left: .5em;
   margin-right: .5em;
   -webkit-filter: brightness(100%);
+
 }
 
 .fanart-banner:hover::before {
   -webkit-filter: brightness(50%);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
+
 }
 
 .banner-text {
@@ -251,15 +253,15 @@ col {
   overflow: hidden;
 }
 
-.portfolio-effect img {
+.portfolio-effect {
   width: 100%;
   height: auto;
   transform: scale(1) translateY(0);
+  transition: transform 1s ease;
 }
 
 .portfolio-effect:hover {
   transform: scale(1.2) translateY(20px);
-  transition: transform 0.4s ease;
 }
 
 .colpad {
