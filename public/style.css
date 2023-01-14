@@ -1,7 +1,11 @@
-body {
-  font-family: sans-serif;
-  background-color: white;
+@font-face {
+  font-family: 'maitree';
+  src: url("/fonts/Maitree-Light.ttf") format("truetype");
+}
 
+body {
+  font-family: maitree;
+  background-color: white;
 }
 
 ul {
@@ -10,6 +14,18 @@ ul {
 
 p {
   background-color: white;
+}
+
+.navbar-link {
+  font-family: maitree;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.nav-link {
+  font-family: maitree;
+  font-size: larger;
+  font-weight: bold;
 }
 
 header {
@@ -46,6 +62,10 @@ button:hover {
   border-left: 3em;
   border-right: 3em;
   border-radius: 1em 1em 1em 1em;
+}
+
+.nav-container {
+  padding: 0 !important;
 }
 
 label {
@@ -164,6 +184,8 @@ col {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: .5em;
+  margin-right: .5em;
 }
 
 .shop-banner {
@@ -173,6 +195,8 @@ col {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: .5em;
+  margin-right: .5em;
 }
 
 .shop-banner::before {    
@@ -209,6 +233,11 @@ col {
 
 .s-space {
   padding-top: 3em;
+}
+
+.insta {
+  padding-left: 1em;
+  margin-right: 1em;
 }
 
 .homepage {

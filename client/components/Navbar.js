@@ -38,7 +38,7 @@ const NavbarComp = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
   return (
     <Navbar bg="navbar navbar-light bg-light" expand="lg">
       <Container>
-          <Container className="justify-content-left">
+          <Container className="nav-containter">
             <Navbar.Brand href="/">
               {/* <img
                 alt=""
@@ -50,7 +50,7 @@ const NavbarComp = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
               <img
                 alt=""
                 src="/img/huaxuanimg/HuaXuanTitleB.png"
-                width="260"
+                width=""
                 height="60"
                 className="d-inline-block align-top"
               />
@@ -107,7 +107,7 @@ const NavbarComp = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
               src="/img/insta-black.svg"
               width="40"
               height="40"
-              className="d-inline-block align-top"
+              className="insta"
             />
           </a>
       </Container>

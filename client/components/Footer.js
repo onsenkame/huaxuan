@@ -11,19 +11,12 @@ const Footer = () => {
       <footer className="footer space">
       <Navbar bg="navbar navbar-light bg-light" expand="lg">
       <Container>
-          <Container className="justify-content-left">
+          <Container className="nav-containter">
             <Navbar.Brand href="/">
-              <img
+            <img
                 alt=""
-                src="/img/huaxuanimg/logotemp.png"
-                width="60"
-                height="60"
-                className="d-inline-block align-top"
-              />
-              <img
-                alt=""
-                src="/img/huaxuanimg/huaxuan.png"
-                width="220"
+                src="/img/huaxuanimg/HuaXuanTitleB.png"
+                width=""
                 height="60"
                 className="d-inline-block align-top"
               />
@@ -58,9 +51,9 @@ const Footer = () => {
             <img
               alt=""
               src="/img/insta-black.svg"
-              width="60"
-              height="60"
-              className="d-inline-block align-top"
+              width="40"
+              height="40"
+              className="insta"
             />
           </a>
       </Container>
