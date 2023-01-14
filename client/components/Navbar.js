@@ -49,7 +49,7 @@ const NavbarComp = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
               /> */}
               <img
                 alt=""
-                src="/img/huaxuanimg/HuaXuanTitle.png"
+                src="/img/huaxuanimg/HuaXuanTitleB.png"
                 width="260"
                 height="60"
                 className="d-inline-block align-top"
