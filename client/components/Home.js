@@ -18,7 +18,7 @@ export const Home = (props) => {
   const titleSet = (title) => setModalTitle(title);
   const imageSet = (image) => setModalImage(image);
 
-  document.addEventListener('contextmenu', event => event.preventDefault());
+  document.addEventListener("contextmenu", (event) => event.preventDefault());
 
   const fanart = [
     {
@@ -71,17 +71,17 @@ export const Home = (props) => {
   const shop = [
     {
       id: 1,
-      title: "Bad Girl",
+      title: "Stickers",
       img: "/img/huaxuanimg/v2/Originals/Bad Girl 2022.jpg",
     },
     {
       id: 2,
-      title: "Companion",
+      title: "Prints",
       img: "/img/huaxuanimg/v2/Originals/Companion (print).jpg",
     },
     {
       id: 3,
-      title: "Klee",
+      title: "Charms",
       img: "/img/huaxuanimg/Shop Pics/Klee low res.jpg",
     },
   ];
@@ -136,11 +136,14 @@ export const Home = (props) => {
                 <Row className="rowpad">
                   {shop.map((art) => (
                     <Col xs={12} md={4} xl={4} key={art.id} className="colpad">
-                      <img
-                        src={art.img}
-                        className="img-fluid square grey-out-layer"
-                        alt="Responsive image"
-                      />
+                      <div className="shop-item">
+                        <img
+                          src={art.img}
+                          className="img-fluid square grey-out-layer"
+                          alt="Responsive image"
+                        />
+                        <h2 className="shop-item-text">{art.title}</h2>
+                      </div>
                     </Col>
                   ))}
                 </Row>
@@ -191,7 +194,7 @@ export const Home = (props) => {
               </Container>
             </section>
             <Modal size="lg" show={show} onHide={handleClose} centered>
-                <img src={modalImage} className="img-fluid" id="no-right-click"/>
+              <img src={modalImage} className="img-fluid" id="no-right-click" />
             </Modal>
           </div>
         )}
