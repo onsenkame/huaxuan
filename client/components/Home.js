@@ -18,6 +18,8 @@ export const Home = (props) => {
   const titleSet = (title) => setModalTitle(title);
   const imageSet = (image) => setModalImage(image);
 
+  document.addEventListener('contextmenu', event => event.preventDefault());
+
   const fanart = [
     {
       id: 1,
@@ -99,7 +101,9 @@ export const Home = (props) => {
                   <Col className="fanart-banner">
                     <div className="banner-text center">
                       <h1 className="banner-text">Portfolio</h1>
-                      <h2 className="banner-text">A collection of fanarts and originals</h2>
+                      <h2 className="banner-text">
+                        A collection of fanarts and originals
+                      </h2>
                     </div>
                   </Col>
                 </Row>
@@ -107,16 +111,16 @@ export const Home = (props) => {
                   {fanart.map((art) => (
                     <Col xs={12} md={4} xl={4} key={art.id} className="colpad">
                       <div className="portfolio-effect-container">
-                      <img
-                        src={art.img}
-                        className="img-fluid square portfolio-effect"
-                        alt="Responsive image"
-                        onClick={() => {
-                          titleSet(art.title);
-                          imageSet(art.img);
-                          handleShow();
-                        }}
-                      />
+                        <img
+                          src={art.img}
+                          className="img-fluid square portfolio-effect"
+                          alt="Responsive image"
+                          onClick={() => {
+                            titleSet(art.title);
+                            imageSet(art.img);
+                            handleShow();
+                          }}
+                        />
                       </div>
                     </Col>
                   ))}
@@ -153,15 +157,18 @@ export const Home = (props) => {
                         <h1 className="s-space">About HuaXuan</h1>
                         <p className="center">
                           HuaXuan spends many of their waking hours (few as they
-                          might be) <br/> creating original illustrations, coloring
-                          and lining webcomics as an assistant, and... <br/> Asian
-                          squatting by their cricut watching stickers being cut.
-                          <br/><br/>Conventions sold at - Animefest, and many more to
+                          might be) <br /> creating original illustrations,
+                          coloring and lining webcomics as an assistant, and...{" "}
+                          <br /> Asian squatting by their cricut watching
+                          stickers being cut.
+                          <br />
+                          <br />
+                          Conventions sold at - Animefest, and many more to
                           come!
                         </p>
                       </Col>
                     </Row>
-                    <Row className="center s-space">
+                    <Row className="center ss-space">
                       <Col>
                         <h1>Contact HuaXuan</h1>
                         <h4>Email them at: rxuanhuang@gmail.com</h4>
@@ -184,7 +191,7 @@ export const Home = (props) => {
               </Container>
             </section>
             <Modal size="lg" show={show} onHide={handleClose} centered>
-              <img src={modalImage} className="img-fluid" />
+                <img src={modalImage} className="img-fluid" id="no-right-click"/>
             </Modal>
           </div>
         )}

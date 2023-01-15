@@ -4,16 +4,14 @@ import { Link } from "react-router-dom";
 import { logout } from "../store";
 import { Container, Row, Navbar, Nav, NavDropdown, Col } from "react-bootstrap";
 
-
 const Footer = () => {
-  
-    return (
-      <footer className="footer space">
+  return (
+    <footer className="footer">
       <Navbar bg="navbar navbar-light bg-light" expand="lg">
-      <Container>
+        <Container>
           <Container className="nav-containter">
             <Navbar.Brand href="/">
-            <img
+              <img
                 alt=""
                 src="/img/huaxuanimg/HuaXuanTitleB.png"
                 width=""
@@ -25,29 +23,13 @@ const Footer = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link
-                href="#portfolio"
-              >
-                Portfolio
-              </Nav.Link>
-              <Nav.Link
-                href="#shop"
-              >
-                Shop
-              </Nav.Link>
-              <Nav.Link
-                href="#info"
-              >
-                Info
-              </Nav.Link>
-              <Nav.Link
-                href="#contact"
-              >
-                Contact
-              </Nav.Link>
+              <Nav.Link href="#portfolio">Portfolio</Nav.Link>
+              <Nav.Link href="#shop">Shop</Nav.Link>
+              <Nav.Link href="#info">Info</Nav.Link>
+              <Nav.Link href="#contact">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
-          <a href="https://www.instagram.com/hua.xuann/">
+          <a href="https://www.instagram.com/hua.xuann/" target="_blank">
             <img
               alt=""
               src="/img/insta-black.svg"
@@ -56,16 +38,15 @@ const Footer = () => {
               className="insta"
             />
           </a>
-      </Container>
-    </Navbar>
-    <p className="center">Copyright Huaxuan 2023</p>
+        </Container>
+      </Navbar>
+      <p className="center">Copyright Huaxuan 2023</p>
     </footer>
-    );
-  };
-  
-  /**
-   * CONTAINER
-   */
-  
-  
-  export default Footer;
+  );
+};
+
+/**
+ * CONTAINER
+ */
+
+export default Footer;

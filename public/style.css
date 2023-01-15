@@ -3,6 +3,16 @@
   src: url("/fonts/Maitree-Light.ttf") format("truetype");
 }
 
+img {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
 body {
   font-family: maitree;
   background-color: white;
@@ -10,10 +20,6 @@ body {
 
 ul {
   display: flex;
-}
-
-p {
-  background-color: white;
 }
 
 a {
@@ -182,7 +188,7 @@ col {
 
 .fanart-banner::before {
   content: "";
-  background-image: url('/img/huaxuanimg/v2/Fanarts/EnkiduBig.jpg');
+  background-image: url('/img/Portfolio_banner.jpg');
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -219,6 +225,18 @@ col {
   color: white;
   font-size: 1.5em;
   text-align: center;
+}
+
+.botimg {
+  position: relative;
+  z-index: 1;
+}
+
+.topimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .shop-banner {
@@ -284,6 +302,10 @@ col {
   padding-top: 3em;
 }
 
+.ss-space {
+  padding-top: 5em;
+}
+
 .insta {
   padding-left: 1em;
   margin-right: 1em;
@@ -312,6 +334,14 @@ body::before {
 
 .left {
   justify-content: left;
+}
+
+.footer {
+  margin-top: 2em;
+  padding-top: 1em;
+  background-color: #f8f9fa;
+  background-origin: content-box;
+  padding-bottom: .75em;
 }
 
 #map {
