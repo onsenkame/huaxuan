@@ -25,46 +25,55 @@ export const Home = (props) => {
       id: 1,
       title: "Power",
       img: "/img/huaxuanimg/v2/Fanarts/CSM Power 11.9.22.jpg",
+      alt: "Digital Art of Power from the anime Chainsaw Man, by HuaXuan"
     },
     {
       id: 2,
       title: "Gilgamesh",
       img: "/img/huaxuanimg/v2/Fanarts/FGO Gilgamesh 11x17 (print).jpg",
+      alt: "Digital Art of Gligamesh from the game Fate: Grand Order, by HuaXuan"
     },
     {
       id: 3,
       title: "Companion",
       img: "/img/huaxuanimg/v2/Originals/Companion (print).jpg",
+      alt: "Original digital Art, by HuaXuan",
     },
     {
       id: 4,
       title: "Reze",
       img: "/img/huaxuanimg/v2/Fanarts/CSM Reze 11.17.22.jpg",
+      alt: "Digital Art of Reze from the anime Chainsaw Man, by HuaXuan"
     },
     {
       id: 5,
       title: "Exusiai",
       img: "/img/huaxuanimg/v2/Fanarts/Arknights Exusiai 11x17 (print).jpg",
+      alt: "Digital Art of Exusiai from the game Arknights, by HuaXuan"
     },
     {
       id: 6,
       title: "Wonder",
       img: "/img/huaxuanimg/v2/Originals/Wonder 9.19.22.jpg",
+      alt: "Original digital Art, by HuaXuan",
     },
     {
       id: 7,
       title: "Lost",
       img: "/img/huaxuanimg/v2/Originals/Lost 2022 11.24.22.jpg",
+      alt: "Original digital Art, by HuaXuan",
     },
     {
       id: 8,
       title: "Hollow",
       img: "/img/huaxuanimg/v2/Originals/Hollow 9.16.22.jpg",
+      alt: "Original digital Art, by HuaXuan",
     },
     {
       id: 9,
       title: "Festival",
       img: "/img/huaxuanimg/v2/Originals/Festival 11.23.22.jpg",
+      alt: "Original digital Art, by HuaXuan",
     },
   ];
 
@@ -73,16 +82,19 @@ export const Home = (props) => {
       id: 1,
       title: "Stickers",
       img: "/img/huaxuanimg/v2/Originals/Bad Girl 2022.jpg",
+      alt: "Original digital art, by HuaXuan later to be sold in shop",
     },
     {
       id: 2,
       title: "Prints",
       img: "/img/huaxuanimg/v2/Originals/Companion (print).jpg",
+      alt: "Original digital art, by HuaXuan later to be sold in shop",
     },
     {
       id: 3,
       title: "Charms",
       img: "/img/huaxuanimg/Shop Pics/Klee low res.jpg",
+      alt: "Original digital art, by HuaXuan later to be sold in shop",
     },
   ];
 
@@ -114,7 +126,7 @@ export const Home = (props) => {
                         <img
                           src={art.img}
                           className="img-fluid square portfolio-effect"
-                          alt="Responsive image"
+                          alt={"Responsive image" + art.alt}
                           onClick={() => {
                             titleSet(art.title);
                             imageSet(art.img);
@@ -139,8 +151,8 @@ export const Home = (props) => {
                       <div className="shop-item">
                         <img
                           src={art.img}
-                          className="img-fluid square grey-out-layer"
-                          alt="Responsive image"
+                          className="img-fluid square grey-out-layer square-element"
+                          alt={"Responsive image" + art.alt}
                         />
                         <h2 className="shop-item-text">{art.title}</h2>
                       </div>
