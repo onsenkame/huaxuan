@@ -127,6 +127,7 @@ export const Home = (props) => {
                           src={art.img}
                           className="img-fluid square portfolio-effect"
                           alt={"Responsive image" + art.alt}
+                          loading="lazy"
                           onClick={() => {
                             titleSet(art.title);
                             imageSet(art.img);
@@ -153,6 +154,7 @@ export const Home = (props) => {
                           src={art.img}
                           className="img-fluid square grey-out-layer square-element"
                           alt={"Responsive image" + art.alt}
+                          loading="lazy"
                         />
                         <h2 className="shop-item-text">{art.title}</h2>
                       </div>
