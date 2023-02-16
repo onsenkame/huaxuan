@@ -81,19 +81,19 @@ export const Home = (props) => {
     {
       id: 1,
       title: "Stickers",
-      img: "/img/huaxuanimg/v2/Originals/Bad Girl 2022.jpg",
+      img: "/img/huaxuanimg/Shop Pics/Sticker Banner.jpg",
       alt: "Original digital art, by HuaXuan later to be sold in shop",
     },
     {
       id: 2,
       title: "Prints",
-      img: "/img/huaxuanimg/v2/Originals/Companion (print).jpg",
+      img: "/img/huaxuanimg/Shop Pics/Prints Banner.jpg",
       alt: "Original digital art, by HuaXuan later to be sold in shop",
     },
     {
       id: 3,
       title: "Charms",
-      img: "/img/huaxuanimg/Shop Pics/Klee low res.jpg",
+      img: "/img/huaxuanimg/Shop Pics/Charm Banner.jpg",
       alt: "Original digital art, by HuaXuan later to be sold in shop",
     },
   ];
@@ -141,7 +141,7 @@ export const Home = (props) => {
                   <Col className="shop-banner banpad">
                     <div className="banner-text center">
                       <h1>Shop</h1>
-                      <h2>Coming soon!</h2>
+                      <h2>Work in Progress!</h2>
                     </div>
                   </Col>
                 </Row>
