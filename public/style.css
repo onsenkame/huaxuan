@@ -11,6 +11,8 @@ img {
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
+  object-position: center;
+  object-fit: cover;
 }
 
 body {
@@ -273,8 +275,7 @@ col {
 }
 
 .insta {
-  padding-left: 1em;
-  margin-right: 1em;
+  padding: .5em;
 }
 
 .homepage {
@@ -314,6 +315,11 @@ body::before {
   background-color: #f8f9fa;
   background-origin: content-box;
   padding-bottom: .75em;
+}
+
+.blur-load {
+  background-size: cover;
+  background-position: center;
 }
 
 #map {

@@ -25,54 +25,63 @@ export const Home = (props) => {
       id: 1,
       title: "Power",
       img: "/img/huaxuanimg/v2/Fanarts/CSM Power 11.9.22.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/v2/Fanarts/powe-small.jpg)"},
       alt: "Digital Art of Power from the anime Chainsaw Man, by HuaXuan"
     },
     {
       id: 2,
       title: "Gilgamesh",
       img: "/img/huaxuanimg/v2/Fanarts/FGO Gilgamesh 11x17 (print).jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/v2/Fanarts/gil-small.jpg)"},
       alt: "Digital Art of Gligamesh from the game Fate: Grand Order, by HuaXuan"
     },
     {
       id: 3,
       title: "Companion",
       img: "/img/huaxuanimg/v2/Originals/Companion (print).jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/v2/Originals/comp-small.jpg)"},
       alt: "Original digital Art, by HuaXuan",
     },
     {
       id: 4,
       title: "Reze",
       img: "/img/huaxuanimg/v2/Fanarts/CSM Reze 11.17.22.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/v2/Fanarts/reze-small.jpg)"},
       alt: "Digital Art of Reze from the anime Chainsaw Man, by HuaXuan"
     },
     {
       id: 5,
       title: "Exusiai",
       img: "/img/huaxuanimg/v2/Fanarts/Arknights Exusiai 11x17 (print).jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/v2/Fanarts/exu-small.jpg)"},
       alt: "Digital Art of Exusiai from the game Arknights, by HuaXuan"
     },
     {
       id: 6,
       title: "Wonder",
       img: "/img/huaxuanimg/v2/Originals/Wonder 9.19.22.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/v2/Originals/wond-small.jpg)"},
       alt: "Original digital Art, by HuaXuan",
     },
     {
       id: 7,
       title: "Lost",
       img: "/img/huaxuanimg/v2/Originals/Lost 2022 11.24.22.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/v2/Originals/lost-small.jpg)"},
       alt: "Original digital Art, by HuaXuan",
     },
     {
       id: 8,
       title: "Hollow",
       img: "/img/huaxuanimg/v2/Originals/Hollow 9.16.22.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/v2/Originals/holl-small.jpg)"},
       alt: "Original digital Art, by HuaXuan",
     },
     {
       id: 9,
       title: "Festival",
       img: "/img/huaxuanimg/v2/Originals/Festival 11.23.22.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/v2/Originals/fes-small.jpg)"},
       alt: "Original digital Art, by HuaXuan",
     },
   ];
@@ -82,18 +91,21 @@ export const Home = (props) => {
       id: 1,
       title: "Stickers",
       img: "/img/huaxuanimg/Shop Pics/Sticker Banner.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/Shop Pics/stik-small.jpg)"},
       alt: "Original digital art, by HuaXuan later to be sold in shop",
     },
     {
       id: 2,
       title: "Prints",
       img: "/img/huaxuanimg/Shop Pics/Prints Banner.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/Shop Pics/print-small.jpg)"},
       alt: "Original digital art, by HuaXuan later to be sold in shop",
     },
     {
       id: 3,
       title: "Charms",
       img: "/img/huaxuanimg/Shop Pics/Charm Banner.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/Shop Pics/charm-small.jpg)"},
       alt: "Original digital art, by HuaXuan later to be sold in shop",
     },
   ];
@@ -122,7 +134,7 @@ export const Home = (props) => {
                 <Row className="rowpad">
                   {fanart.map((art) => (
                     <Col xs={12} md={4} xl={4} key={art.id} className="colpad">
-                      <div className="portfolio-effect-container">
+                      <div className="portfolio-effect-container blur-load" style={art.small}>
                         <img
                           src={art.img}
                           className="img-fluid square portfolio-effect"
@@ -149,7 +161,7 @@ export const Home = (props) => {
                 <Row className="rowpad">
                   {shop.map((art) => (
                     <Col xs={12} md={4} xl={4} key={art.id} className="colpad">
-                      <div className="shop-item">
+                      <div className="shop-item blur-load" style={art.small}>
                         <img
                           src={art.img}
                           className="img-fluid square grey-out-layer square-element"
