@@ -173,7 +173,43 @@ col {
 
 .fanart-banner:hover::before {
   -webkit-filter: brightness(50%);
+}
 
+.caption {
+  display: inline-block;
+  background: black;
+  padding: 0;
+  position:relative
+}
+
+.caption img {
+  display: block;
+  
+  -webkit-transition: all 0.5s linear;
+     -moz-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+       -o-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+}
+
+.caption:hover img {
+  opacity: 0.5;           
+}
+.caption span {
+  position:absolute;
+  top: 45%;
+  left: 50%;
+  color:#000;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 150%;
+  }
+.caption:hover span{color:#fff;
+  -webkit-transition: all 0.5s linear;
+     -moz-transition: all 0.5s linear;
+      -ms-transition: all 0.5s linear;
+       -o-transition: all 0.5s linear;
+          transition: all 0.5s linear;
 }
 
 .banner-text {

@@ -14,6 +14,7 @@ import { fetchCart } from "./store/order";
 import UserInfo from "./components/UserInfo";
 import AllUsers from "./components/AllUsers";
 import EditCheckout from "./components/EditCheckout";
+import Conventions from "./components/Conventions";
 
 /**
  * COMPONENT
@@ -38,7 +39,8 @@ class Routes extends Component {
         
         {isLoggedIn ? (
           <Switch>
-            <Route path="/" component={Home} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/conventions" component={Conventions} />
             {/* <Route exact path="/products" component={AllProducts} />
             <Route path="/products/:productId" component={SingleProduct} />
             <Route path="/payment" component={Payment} />
@@ -52,8 +54,8 @@ class Routes extends Component {
           </Switch>
         ) : (
           <Switch>
-            <Route path="/" component={Home} />
-            {/* <Route exact path="/" component={Login} /> */}
+            <Route exact path="/" component={Home} />
+            <Route exact path="/conventions" component={Conventions} />
             {/* <Route path="/products/:productId" component={SingleProduct} />
             <Route exact path="/products" component={AllProducts} />
             <Route path="/cart" component={Cart} />
