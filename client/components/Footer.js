@@ -23,12 +23,12 @@ const Footer = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/#portfolio">Portfolio</Nav.Link>
-              <Nav.Link href="/#shop">Shop</Nav.Link>
-              <Nav.Link href="/#info">Info</Nav.Link>
-              <Nav.Link href="/#contact">Contact</Nav.Link>
+              <Nav.Link as={Link} to="/#portfolio">Portfolio</Nav.Link>
+              <Nav.Link as={Link} to="/#shop">Shop</Nav.Link>
+              <Nav.Link as={Link} to="/#info">Info</Nav.Link>
+              <Nav.Link as={Link} to="/#contact">Contact</Nav.Link>
               <Nav.Link
-                href="/conventions">
+                as={Link} to="/conventions">
                 Conventions
               </Nav.Link>
             </Nav>

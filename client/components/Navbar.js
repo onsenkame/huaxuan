@@ -60,7 +60,7 @@ const NavbarComp = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link
-                href="/#portfolio"
+                as={Link} to="/#portfolio"
                 className={
                   activeLink === "portfolio"
                     ? "active navbar-link"
@@ -71,7 +71,7 @@ const NavbarComp = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
                 Portfolio
               </Nav.Link>
               <Nav.Link
-                href="/#shop"
+                as={Link} to="/#shop"
                 className={
                   activeLink === "shop" ? "active navbar-link" : "navbar-link"
                 }
@@ -80,7 +80,7 @@ const NavbarComp = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
                 Shop
               </Nav.Link>
               <Nav.Link
-                href="/#info"
+                as={Link} to="/#info"
                 className={
                   activeLink === "info" ? "active navbar-link" : "navbar-link"
                 }
@@ -89,7 +89,7 @@ const NavbarComp = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
                 Info
               </Nav.Link>
               <Nav.Link
-                href="/#contact"
+                as={Link} to="/#contact"
                 className={
                   activeLink === "contact"
                     ? "active navbar-link"
