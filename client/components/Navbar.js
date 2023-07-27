@@ -100,7 +100,7 @@ const NavbarComp = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
                 Contact
               </Nav.Link>
               <Nav.Link
-                href="/conventions"
+                as={Link} to="/conventions"
                 className={
                   activeLink === "conventions"
                     ? "active navbar-link"
