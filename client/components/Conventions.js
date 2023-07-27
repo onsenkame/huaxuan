@@ -21,21 +21,22 @@ export const Conventions = (props) => {
   const conPics = [
     {
       id: 1,
-      title: "Mini Art Mart SF",
-      img: "/img/MiniArtMartSF.jpg",
-      alt: "Mini Art Mart San Franciscon"
-    },
-    {
-      id: 2,
       title: "UCSD Anime Fest",
+      sub: "with genthipa",
       img: "/img/UCSDAnimeFest.jpg",
       alt: "UCSD Anime Fest"
     },
     {
-      id: 3,
+      id: 2,
       title: "UCSD Triton Gaming Expo",
       img: "/img/UCSDTritonGamingExpo.jpg",
       alt: "UCSD Triton Gaming Expo",
+    },
+    {
+      id: 3,
+      title: "Mini Art Mart SF",
+      img: "/img/MiniArtMartSF.jpg",
+      alt: "Mini Art Mart San Francisco"
     },
   ];
 
@@ -65,7 +66,7 @@ export const Conventions = (props) => {
                             handleShow();
                           }}
                         />
-                        <span>{art.title}</span>
+                        <span>{art.title}{"\n"}{art.sub}</span>
                       </div>
                     </Col>
                   ))}
