@@ -47,13 +47,13 @@ export const Conventions = (props) => {
             <h3 className="anchor-container">Welcome, {email}</h3>
           </div>
         ) : (
-          <div className="homepage ">
+          <div className="homepage">
             <section className="banner" id="portfolio">
               <Container>
                 <Row className="rowpad">
                   {conPics.map((art) => (
                     <Col xs={12} md={4} xl={4} key={art.id} className="colpad">
-                      <div className="portfolio-effect-container caption" style={art.small}>
+                      <div className="portfolio-effect-container caption">
                         <img
                           src={art.img}
                           className="img-fluid square portfolio-effect"

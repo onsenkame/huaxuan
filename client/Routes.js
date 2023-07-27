@@ -1,19 +1,10 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import { withRouter, Route, Switch, Redirect } from "react-router-dom";
-import { Login, Signup } from "./components/AuthForm";
 import Home from "./components/Home";
 import { me } from "./store";
-import AllProducts from "./components/AllProducts";
-import SingleProduct from "./components/SingleProduct";
-import Checkout from "./components/Checkout";
-import Payment from "./components/Payment";
-import Cart from "./components/Cart";
 import { fetchProducts } from "./store/allProducts";
 import { fetchCart } from "./store/order";
-import UserInfo from "./components/UserInfo";
-import AllUsers from "./components/AllUsers";
-import EditCheckout from "./components/EditCheckout";
 import Conventions from "./components/Conventions";
 
 /**
@@ -40,7 +31,7 @@ class Routes extends Component {
         {isLoggedIn ? (
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/conventions" component={Conventions} />
+            <Route path="/conventions" component={Conventions} />
             {/* <Route exact path="/products" component={AllProducts} />
             <Route path="/products/:productId" component={SingleProduct} />
             <Route path="/payment" component={Payment} />
@@ -55,7 +46,7 @@ class Routes extends Component {
         ) : (
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/conventions" component={Conventions} />
+            <Route path="/conventions" component={Conventions} />
             {/* <Route path="/products/:productId" component={SingleProduct} />
             <Route exact path="/products" component={AllProducts} />
             <Route path="/cart" component={Cart} />
