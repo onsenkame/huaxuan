@@ -39,7 +39,7 @@ const NavbarComp = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
     <Navbar bg="navbar navbar-light bg-light" expand="lg">
       <Container>
           <Container className="nav-containter">
-            <Navbar.Brand href="/">
+            <Navbar.Brand as={Link} to="/">
               {/* <img
                 alt=""
                 src="/img/huaxuanimg/HuaXuanppf.png"

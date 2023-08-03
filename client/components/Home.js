@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import { Container, Row, Col, Modal, Button } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 
 /**
  * COMPONENT
@@ -122,14 +124,14 @@ export const Home = (props) => {
             <section className="banner" id="portfolio">
               <Container>
                 <Row>
-                  <Col className="fanart-banner">
+                  <Nav className="fanart-banner" as={Link} to="/portfolio">
                     <div className="banner-text center">
                       <h1 className="banner-text">Portfolio</h1>
                       <h2 className="banner-text">
                         A collection of fanarts and originals
                       </h2>
                     </div>
-                  </Col>
+                  </Nav>
                 </Row>
                 <Row className="rowpad">
                   {fanart.map((art) => (
