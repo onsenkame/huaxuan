@@ -60,7 +60,7 @@ const NavbarComp = ({ handleClick, isLoggedIn, cart, products, isAdmin }) => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link
-                href="/#portfolio"
+                as={Link} to="/portfolio"
                 className={
                   activeLink === "portfolio"
                     ? "active navbar-link"

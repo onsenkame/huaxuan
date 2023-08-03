@@ -6,6 +6,7 @@ import { me } from "./store";
 import { fetchProducts } from "./store/allProducts";
 import { fetchCart } from "./store/order";
 import Conventions from "./components/Conventions";
+import Portfolio from "./components/Portfolio";
 
 /**
  * COMPONENT
@@ -32,6 +33,7 @@ class Routes extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/conventions" component={Conventions} />
+            <Route path="/portfolio" component={Portfolio} />
             {/* <Route exact path="/products" component={AllProducts} />
             <Route path="/products/:productId" component={SingleProduct} />
             <Route path="/payment" component={Payment} />
@@ -47,6 +49,7 @@ class Routes extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/conventions" component={Conventions} />
+            <Route path="/portfolio" component={Portfolio} />
             {/* <Route path="/products/:productId" component={SingleProduct} />
             <Route exact path="/products" component={AllProducts} />
             <Route path="/cart" component={Cart} />
