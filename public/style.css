@@ -161,7 +161,7 @@ col {
 .fanart-banner {
   position: relative; 
   width: 100vw;
-  height: 50vh;
+  height: 28vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,28 +213,12 @@ col {
           transition: all 0.5s linear;
 }
 
-.caption span2 {
-  position:absolute;
-  top: 55%;
-  left: 50%;
-  color:#00000049;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 150%;
-  }
-
-.caption:hover span2{color:#fff;
-  -webkit-transition: all 0.5s linear;
-     -moz-transition: all 0.5s linear;
-      -ms-transition: all 0.5s linear;
-       -o-transition: all 0.5s linear;
-          transition: all 0.5s linear;
-}
-
 .banner-text {
   color: white;
   font-size: 1.5em;
   text-align: center;
+  translate: 0px 5px;
+  
 }
 
 .botimg {
