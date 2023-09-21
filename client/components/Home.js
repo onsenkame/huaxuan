@@ -67,9 +67,9 @@ export const Home = (props) => {
     },
     {
       id: 7,
-      title: "Lost",
-      img: "/img/huaxuanimg/v2/Originals/Lost 2022 11.24.22.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/v2/Originals/lost-small.jpg)"},
+      title: "Wonder",
+      img: "/img/huaxuanimg/v2/Originals/Wonder 9.19.22.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/v2/Originals/wond-small.jpg)"},
       alt: "Original digital Art, by HuaXuan",
     },
     {
