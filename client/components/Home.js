@@ -46,24 +46,24 @@ export const Home = (props) => {
     },
     {
       id: 4,
-      title: "Reze",
-      img: "/img/huaxuanimg/v2/Fanarts/CSM Reze 11.17.22.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/v2/Fanarts/reze-small.jpg)"},
-      alt: "Digital Art of Reze from the anime Chainsaw Man, by HuaXuan"
+      title: "Dan Heng IL",
+      img: "/img/huaxuanimg/Art Profile Pics/DHIL.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/aPP/Art Profile Pics/Pixel Squares/dhil_sm.jpg)"},
+      alt: "Digital Art of Dan Heng IL from the game Honkai Star Rail, by HuaXuan"
     },
     {
       id: 5,
-      title: "Exusiai",
-      img: "/img/huaxuanimg/v2/Fanarts/Arknights Exusiai 11x17 (print).jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/v2/Fanarts/exu-small.jpg)"},
-      alt: "Digital Art of Exusiai from the game Arknights, by HuaXuan"
+      title: "Daki and Gyutaro",
+      img: "/img/huaxuanimg/aPP/Art Profile Pics/Portfolio/Fanarts/KnYDakiandGyutaro.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/aPP/Art Profile Pics/Pixel Squares/KnYDakiand Gyutaro_small.jpg)"},
+      alt: "Digital Art of Daki and Gyutaro from the anime Kimetsu no Yaiba, by HuaXuan",
     },
     {
       id: 6,
-      title: "Wonder",
-      img: "/img/huaxuanimg/v2/Originals/Wonder 9.19.22.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/v2/Originals/wond-small.jpg)"},
-      alt: "Original digital Art, by HuaXuan",
+      title: "Hololive Suisei",
+      img: "/img/huaxuanimg/aPP/Art Profile Pics/Portfolio/Fanarts/HololiveSuisei.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/aPP/Art Profile Pics/Pixel Squares/HololiveSuisei_small.jpg)"},
+      alt: "Digital Art of vtuber Hoshimachi Suisei from Hololive, by HuaXuan"
     },
     {
       id: 7,
@@ -194,8 +194,7 @@ export const Home = (props) => {
                           stickers being cut.
                           <br />
                           <br />
-                          Conventions sold at - Animefest, and many more to
-                          come!
+                          Conventions sold at - UCSD Animefest, Triton Gaming Expo, various SF Mini Art Marts, YumeCon and many more to come!
                         </p>
                       </Col>
                     </Row>

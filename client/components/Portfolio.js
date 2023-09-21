@@ -113,10 +113,10 @@ export const Portfolio = (props) => {
       },
       {
         id: 14,
-        title: "Hololive Fubuki",
-        img: "/img/huaxuanimg/aPP/Art Profile Pics/Portfolio/Fanarts/HololiveFubuki.jpg",
-        small: {backgroundImage: "url(/img/huaxuanimg/aPP/Art Profile Pics/Pixel Squares/HololiveFubuki_small.jpg)"},
-        alt: "Digital Art of vtuber Shirakami Fubuki from Hololive, by HuaXuan"
+        title: "Kafka",
+        img: "/img/huaxuanimg/Art Profile Pics/HSRKafka.jpg",
+        small: {backgroundImage: "url(/img/huaxuanimg/aPP/Art Profile Pics/Pixel Squares/hsrk_sm.jpg)"},
+        alt: "Digital Art of Kafka from the game Honkai Star Rail, by HuaXuan"
       },
       {
         id: 15,
@@ -127,10 +127,10 @@ export const Portfolio = (props) => {
       },
       {
         id: 16,
-        title: "Hololive Pekora",
-        img: "/img/huaxuanimg/aPP/Art Profile Pics/Portfolio/Fanarts/HololivePekora.jpg",
-        small: {backgroundImage: "url(/img/huaxuanimg/aPP/Art Profile Pics/Pixel Squares/HololivePekora_small.jpg)"},
-        alt: "Digital Art of vtuber Usada Pekora from Hololive, by HuaXuan"
+        title: "Dan Heng IL",
+        img: "/img/huaxuanimg/Art Profile Pics/DHIL.jpg",
+        small: {backgroundImage: "url(/img/huaxuanimg/aPP/Art Profile Pics/Pixel Squares/dhil_sm.jpg)"},
+        alt: "Digital Art of Dan Heng IL from the game Honkai Star Rail, by HuaXuan"
       },
       {
         id: 17,

@@ -21,22 +21,28 @@ export const Conventions = (props) => {
   const conPics = [
     {
       id: 1,
-      title: "UCSD Anime Fest",
-      sub: "with genthipa",
-      img: "/img/UCSDAnimeFest.jpg",
-      alt: "UCSD Anime Fest"
+      title: "Mini Art Mart SF",
+      img: "/img/mamsf.jpg",
+      alt: "Mini Art Mart San Francisco",
     },
     {
       id: 2,
+      title: "Mini Art Mart SF",
+      img: "/img/MiniArtMartSF.jpg",
+      alt: "Mini Art Mart San Francisco"
+    },
+    {
+      id: 3,
       title: "UCSD Triton Gaming Expo",
       img: "/img/UCSDTritonGamingExpo.jpg",
       alt: "UCSD Triton Gaming Expo",
     },
     {
-      id: 3,
-      title: "Mini Art Mart SF",
-      img: "/img/MiniArtMartSF.jpg",
-      alt: "Mini Art Mart San Francisco"
+      id: 4,
+      title: "UCSD Anime Fest",
+      sub: "with genthipa",
+      img: "/img/UCSDAnimeFest.jpg",
+      alt: "UCSD Anime Fest"
     },
   ];
 
