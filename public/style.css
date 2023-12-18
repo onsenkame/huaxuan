@@ -324,7 +324,7 @@ col {
 .con-banner {
   position: relative;
   width: 100vw;
-  height: 40vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   justify-content: center;
