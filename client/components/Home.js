@@ -271,7 +271,7 @@ export const Home = (props) => {
                     </Col>
                   ))}
                 </Row>
-                <Row className="space">
+                <Row className="space" id="con">
                   <Col className="con-banner" as={Link} to="/conventions">
                     <div className="banner-text center">
                       <h1 className="banner-text">Conventions</h1>
