@@ -22,7 +22,7 @@ export class AllProducts extends React.Component {
                 <Link to={`/products/${product.id}`} key={product.id}>
                   <h1 className="center"> {product.name} </h1>{" "}
                   <img src={product.imageSmall} />
-                  <p className="center">National Pokedex</p>
+                  <p className="center">.</p>
                   <p className="center">
                     Number: {product.nationalPokedexNumbers}
                   </p>

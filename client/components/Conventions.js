@@ -6,8 +6,6 @@ import { Container, Row, Col, Modal, Button } from "react-bootstrap";
  * COMPONENT
  */
 export const Conventions = (props) => {
-  const { email } = props;
-  const { isLoggedIn } = props;
   const [show, setShow] = useState(false);
   const [modalTitle, setModalTitle] = useState("");
   const [modalImage, setModalImage] = useState("");
@@ -21,24 +19,30 @@ export const Conventions = (props) => {
   const conPics = [
     {
       id: 1,
+      title: "YumeConUSA",
+      img: "/img/YumeConUSA.jpg",
+      alt: "YumeConUSA"
+    },
+    {
+      id: 2,
       title: "Mini Art Mart SF",
       img: "/img/mamsf.jpg",
       alt: "Mini Art Mart San Francisco",
     },
     {
-      id: 2,
+      id: 3,
       title: "Mini Art Mart SF",
       img: "/img/MiniArtMartSF.jpg",
       alt: "Mini Art Mart San Francisco"
     },
     {
-      id: 3,
+      id: 4,
       title: "UCSD Triton Gaming Expo",
       img: "/img/UCSDTritonGamingExpo.jpg",
       alt: "UCSD Triton Gaming Expo",
     },
     {
-      id: 4,
+      id: 5,
       title: "UCSD Anime Fest",
       sub: "with genthipa",
       img: "/img/UCSDAnimeFest.jpg",
@@ -49,11 +53,6 @@ export const Conventions = (props) => {
   return (
     <main>
       <section className="container">
-        {isLoggedIn ? (
-          <div>
-            <h3 className="anchor-container">Welcome, {email}</h3>
-          </div>
-        ) : (
           <div className="homepage">
             <section className="banner" id="portfolio">
               <Container>
@@ -84,7 +83,6 @@ export const Conventions = (props) => {
               <img src={modalImage} className="img-fluid" id="no-right-click" />
             </Modal>
           </div>
-        )}
       </section>
     </main>
   );

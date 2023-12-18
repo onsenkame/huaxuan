@@ -1,4 +1,4 @@
-const { db } = require('./db')
+// const { db } = require('./db')
 const PORT = process.env.PORT || 8080
 const app = require('./app')
 const seed = require('../script/seed');
@@ -9,7 +9,7 @@ const init = async () => {
       await seed();
     }
     else {
-      await db.sync()
+      // await db.sync()
     }
     // start listening (and create a 'server' object representing our server)
     app.listen(PORT, () => console.log(`Mixing it up on port ${PORT}`))
