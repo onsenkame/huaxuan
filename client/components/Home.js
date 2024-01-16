@@ -276,7 +276,7 @@ export const Home = (props) => {
                     <div className="banner-text center">
                       <h1 className="banner-text">Conventions</h1>
                       <h2 className="banner-text">
-                        YumeConUSA Table Display Oct. 2023
+
                       </h2>
                     </div>
                   </Col>

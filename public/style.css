@@ -307,7 +307,7 @@ col {
 
 .con-banner::before {
   content: "";
-  background-image: url('/img/YumeConUSA.jpg');
+  background-image: url('/img/sacanime.jpg');
   background-size: cover;
   background-position: center;
   position: absolute;
