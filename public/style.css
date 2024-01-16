@@ -173,7 +173,8 @@ col {
 
 .merch-banner::before {
   content: "";
-  background-image: url('/img/huaxuanimg/Shop Pics/merchbanner.jpg');
+  /* background-image: url('/img/huaxuanimg/Shop Pics/merchbanner.jpg'); */
+  background-image: url('/img/Portfolio_banner.jpg');
   background-size: cover;
   background-position: center;
   position: absolute;

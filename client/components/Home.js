@@ -36,10 +36,10 @@ export const Home = (props) => {
     },
     {
       id: 3,
-      title: "Companion",
-      img: "/img/huaxuanimg/v2/Originals/Companion (print).jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/comp-small.jpg)"},
-      alt: "Original digital Art, by HuaXuan",
+      title: "Zhongli",
+      img: "/img/huaxuanimg/v2/Fanarts/zhongli.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/zhongli-sm.jpg)"},
+      alt: "Digital Art of Zhong Li from the game Genshin Impact, by HuaXuan",
     },
     {
       id: 4,
@@ -78,10 +78,10 @@ export const Home = (props) => {
     },
     {
       id: 9,
-      title: "Festival",
-      img: "/img/huaxuanimg/v2/Originals/Festival 11.23.22.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/fes-small.jpg)"},
-      alt: "Original digital Art, by HuaXuan",
+      title: "March 7th Bridal",
+      img: "/img/huaxuanimg/v2/Fanarts/march.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/march_sm.jpg)"},
+      alt: "Digital Art of March 7th from the game Honkai Star Rail, by HuaXuan"
     },
   ];
 

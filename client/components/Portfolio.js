@@ -78,10 +78,10 @@ export const Portfolio = (props) => {
       },
       {
         id: 4,
-        title: "Reze",
-        img: "/img/huaxuanimg/v2/Fanarts/CSM Reze 11.17.22.jpg",
-        small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/reze-small.jpg)"},
-        alt: "Digital Art of Reze from the anime Chainsaw Man, by HuaXuan"
+        title: "March 7th Bridal",
+        img: "/img/huaxuanimg/v2/Fanarts/march.jpg",
+        small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/march_sm.jpg)"},
+        alt: "Digital Art of March 7th from the game Honkai Star Rail, by HuaXuan"
       },
       {
         id: 5,
@@ -127,10 +127,10 @@ export const Portfolio = (props) => {
       },
       {
         id: 1,
-        title: "Power",
-        img: "/img/huaxuanimg/v2/Fanarts/CSM Power 11.9.22.jpg",
-        small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/powe-small.jpg)"},
-        alt: "Digital Art of Power from the anime Chainsaw Man, by HuaXuan"
+        title: "Zhongli",
+        img: "/img/huaxuanimg/v2/Fanarts/zhongli.jpg",
+        small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/zhongli-sm.jpg)"},
+        alt: "Digital Art of Zhong Li from the game Genshin Impact, by HuaXuan",
       },
       {
         id: 14,
