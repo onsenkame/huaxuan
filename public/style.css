@@ -252,6 +252,14 @@ col {
 
 }
 
+.banner-textsm {
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  translate: 0px 5px;
+
+}
+
 .botimg {
   position: relative;
   z-index: 1;

@@ -120,10 +120,10 @@ export const Home = (props) => {
     },
     {
       id: 15,
-      title: "March 7th Bridal",
-      img: "/img/huaxuanimg/v2/Fanarts/march.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/march_sm.jpg)"},
-      alt: "Digital Art of March 7th from the game Honkai Star Rail, by HuaXuan"
+      title: "Enkidu",
+      img: "/img/huaxuanimg/v2/Fanarts/Enkidu.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/Enkidu_small.jpg)"},
+      alt: "Digital Art of Enkidu from the game Fate: Grand Order, by HuaXuan"
     },
   ];
 
@@ -236,8 +236,8 @@ export const Home = (props) => {
                   <Col className="fanart-banner" as={Link} to="/portfolio">
                     <div className="banner-text center">
                       <h1 className="banner-text">Illustration Portfolio</h1>
-                      <h2 className="banner-text">
-                        A collection of fanarts and originals
+                      <h2 className="banner-textsm">
+                        A selection of fanarts and originals
                       </h2>
                     </div>
                   </Col>
@@ -265,8 +265,8 @@ export const Home = (props) => {
                   <Col className="merch-banner">
                     <div className="banner-text center">
                       <h1 className="banner-text">Merch Portfolio</h1>
-                      <h2 className="banner-text">
-                        A collection of current merchandise
+                      <h2 className="banner-textsm">
+                        A selection of current merchandise
                       </h2>
                     </div>
                   </Col>

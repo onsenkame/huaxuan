@@ -200,8 +200,8 @@ export const Portfolio = (props) => {
                 <Col className="fanart-banner">
                   <div className="banner-text center">
                     <h1 className="banner-text">Portfolio</h1>
-                    <h2 className="banner-text">
-                      A collection of fanarts and originals
+                    <h2 className="banner-textsm">
+                      A selection of fanarts and originals
                     </h2>
                   </div>
                 </Col>
@@ -234,6 +234,15 @@ export const Portfolio = (props) => {
           <Modal size="lg" show={show} onHide={handleClose} centered>
             <img src={modalImage} className="img-fluid" id="no-right-click" />
           </Modal>
+        </div>
+        <div className="video-container">
+          <iframe
+            src="https://huaxuann.com/public/GenshinZhongli15sec.mp4"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+            allowFullScreen
+          ></iframe>
         </div>
       </section>
     </main>
