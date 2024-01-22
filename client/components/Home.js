@@ -29,10 +29,10 @@ export const Home = (props) => {
     },
     {
       id: 2,
-      title: "Gilgamesh",
-      img: "/img/huaxuanimg/v2/Fanarts/FGO Gilgamesh 11x17 (print).jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/gil-small.jpg)"},
-      alt: "Digital Art of Gligamesh from the game Fate: Grand Order, by HuaXuan"
+      title: "Kohaku",
+      img: "/img/huaxuanimg/v2/Fanarts/Kohaku.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/Kohaku-sm.jpg)"},
+      alt: "Digital Art from the movie Spirited Away, by HuaXuan"
     },
     {
       id: 3,
@@ -57,27 +57,69 @@ export const Home = (props) => {
     },
     {
       id: 6,
-      title: "Hololive Suisei",
-      img: "/img/huaxuanimg/v2/Fanarts/HololiveSuisei.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/HololiveSuisei_small.jpg)"},
-      alt: "Digital Art of vtuber Hoshimachi Suisei from Hololive, by HuaXuan"
-    },
-    {
-      id: 7,
       title: "Freedom",
       img: "/img/huaxuanimg/v2/Originals/Freedom.jpg",
       small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/FreedomSq.jpg)"},
       alt: "Original digital Art, by HuaXuan",
     },
     {
+      id: 7,
+      title: "Hololive Suisei",
+      img: "/img/huaxuanimg/v2/Fanarts/HololiveSuisei.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/HololiveSuisei_small.jpg)"},
+      alt: "Digital Art of vtuber Hoshimachi Suisei from Hololive, by HuaXuan"
+    },
+    {
       id: 8,
+      title: "Howl",
+      img: "/img/huaxuanimg/v2/Fanarts/Howl.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/Howl-sm.jpg)"},
+      alt: "Digital Art from the movie Howl's Moving Castle, by HuaXuan",
+    },
+    {
+      id: 9,
+      title: "March 7th Bridal",
+      img: "/img/huaxuanimg/v2/Fanarts/march.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/march_sm.jpg)"},
+      alt: "Digital Art of March 7th from the game Honkai Star Rail, by HuaXuan"
+    },
+    {
+      id: 10,
+      title: "Hololive Ina",
+      img: "/img/huaxuanimg/v2/Fanarts/HololiveIna.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/HololiveIna_small.jpg)"},
+      alt: "Digital Art of vtuber Ninomae Ina'nis from Hololive, by HuaXuan"
+    },
+    {
+      id: 11,
+      title: "Daki and Gyutaro",
+      img: "/img/huaxuanimg/v2/Fanarts/KnYDakiandGyutaro.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/KnYDakiand Gyutaro_small.jpg)"},
+      alt: "Digital Art of Daki and Gyutaro from the anime Kimetsu no Yaiba, by HuaXuan",
+    },
+    {
+      id: 12,
+      title: "Nanachi",
+      img: "/img/huaxuanimg/v2/Fanarts/Nanachi.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/Nanachi_sm.jpg)"},
+      alt: "Digital Art of Nanachi from the anime Made in Abyss, by HuaXuan"
+    },
+    {
+      id: 13,
+      title: "Gilgamesh",
+      img: "/img/huaxuanimg/v2/Fanarts/FGO Gilgamesh 11x17 (print).jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/gil-small.jpg)"},
+      alt: "Digital Art of Gligamesh from the game Fate: Grand Order, by HuaXuan"
+    },
+    {
+      id: 14,
       title: "Hollow",
       img: "/img/huaxuanimg/v2/Originals/Hollow 9.16.22.jpg",
       small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/holl-small.jpg)"},
       alt: "Original digital Art, by HuaXuan",
     },
     {
-      id: 9,
+      id: 15,
       title: "March 7th Bridal",
       img: "/img/huaxuanimg/v2/Fanarts/march.jpg",
       small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/march_sm.jpg)"},
