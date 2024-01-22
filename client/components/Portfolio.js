@@ -235,15 +235,6 @@ export const Portfolio = (props) => {
             <img src={modalImage} className="img-fluid" id="no-right-click" />
           </Modal>
         </div>
-        <div className="video-container">
-          <iframe
-            src="https://huaxuann.com/public/GenshinZhongli15sec.mp4"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-            allowFullScreen
-          ></iframe>
-        </div>
       </section>
     </main>
   );
