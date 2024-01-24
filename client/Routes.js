@@ -7,6 +7,11 @@ import { fetchProducts } from "./store/allProducts";
 import { fetchCart } from "./store/order";
 import Conventions from "./components/Conventions";
 import Portfolio from "./components/Portfolio";
+import ProcessZL from "./components/DrawProcessZL";
+import ProcessDH from "./components/DrawProcessDH";
+import ProcessKH from "./components/DrawProcessKH";
+import ProcessHL from "./components/DrawProcessHL";
+import Process from "./components/Process";
 
 /**
  * COMPONENT
@@ -32,24 +37,19 @@ class Routes extends Component {
         {isLoggedIn ? (
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/conventions" component={Conventions} />
-            <Route path="/portfolio" component={Portfolio} />
-            {/* <Route exact path="/products" component={AllProducts} />
-            <Route path="/products/:productId" component={SingleProduct} />
-            <Route path="/payment" component={Payment} />
-            <Route path="/checkout/edit" component={EditCheckout} />
-            <Route exact path="/checkout" component={Checkout} />
-            <Route exact path="/cart" component={Cart} />
-            <Route exact path="/editInfo" component={UserInfo} />
-            <Route path="/users" component={AllUsers} />
-            <Route path="/login" component={Home} />
-            <Route path="/signup" component={Home} /> */}
+            <Route exact path="/conventions" component={Conventions} />
+            <Route exact path="/portfolio" component={Portfolio} />
           </Switch>
         ) : (
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/conventions" component={Conventions} />
-            <Route path="/portfolio" component={Portfolio} />
+            <Route exact path="/conventions" component={Conventions} />
+            <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path="/process" component={Process} />
+            <Route exact path="/process-zl" component={ProcessZL} />
+            <Route exact path="/process-dh" component={ProcessDH} />
+            <Route exact path="/process-kh" component={ProcessKH} />
+            <Route exact path="/process-hl" component={ProcessHL} />
             {/* <Route path="/products/:productId" component={SingleProduct} />
             <Route exact path="/products" component={AllProducts} />
             <Route path="/cart" component={Cart} />
