@@ -34,35 +34,29 @@ export const DrawProcessZL = (props) => {
       <section className="container">
         <div className="homepage">
           <section className="banner">
-            <Container>
-              <Row className="rowpad">
+          <Container>
+            <Row className="rowpad">
                 <Col className="speed-banner">
                   <div className="banner-text center">
-                    <h1 className="banner-textsm">Fanime '23 Individual Art Sample</h1>
-                    <h2 className="banner-textxsm">
-                      Genshin Impact - Zhongli
+                    <h1 className="banner-text-d">Fanime '24 Individual Art Sample</h1>
+                    <h2 className="banner-textsm-d sm-space">
+                      Genshin Impact -  Zhong Li
                     </h2>
                   </div>
                 </Col>
               </Row>
-              <Row className="rowpad">
-                <Col xs={6} md={6} xl={6}>
-                  <h2>Illustration</h2>
-                </Col>
-                <Col xs={6} md={6} xl={6}>
-                  <h2>Development Speedpaint</h2>
-                </Col>
-              </Row>
-              {portPics.map((art) => (
                 <Row>
-                  <Col xs={6} md={6} xl={6} key={art.id} className="colpad">
+                  {portPics.map((art) => (
+                    <>
+                  <Col xs={1} md={1} xl={1}></Col>
+                  <Col xs={10} md={10} xl={10} key={art.id} className="colpad centered">
                     <div
-                      className="portfolio-effect-container blur-load"
+                      className="process-effect-container blur-load"
                       style={art.small}
                     >
                       <img
                         src={art.img}
-                        className="img-fluid"
+                        className="img-fluid process-aspect"
                         alt={"Responsive image" + art.alt}
                         loading="lazy"
                         onClick={() => {
@@ -73,19 +67,10 @@ export const DrawProcessZL = (props) => {
                       />
                     </div>
                   </Col>
-                  <Col xs={6} md={6} xl={6} className="colpad">
-                    <div className="iframe-effect-container">
-                      <iframe
-                        className="iframe-effect"
-                        src={`https://www.youtube.com/embed/Hlwl5EqR_Fw?autoplay=1&playlist=Hlwl5EqR_Fw&loop=1&controls=1&mute=1`}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        title="Genshin Zhongli 15 sec speedpaint"
-                      />
-                    </div>
-                  </Col>
+                  <Col xs={1} md={1} xl={1}></Col>
+                  </>
+                  ))}
                 </Row>
-              ))}
             </Container>
           </section>
           <Modal size="lg" show={show} onHide={handleClose} centered>

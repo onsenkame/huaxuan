@@ -22,19 +22,19 @@ export const Process = (props) => {
   const portPics = [
     {
       id: 1,
-      title: "Zhongli",
-      img: "/img/huaxuanimg/v2/Fanarts/zhongli.jpg",
-      small: { backgroundImage: "url(/img/huaxuanimg/PixelSquares/zhongli-sm.jpg)" },
-      alt: "Digital Art of Zhong Li from the game Genshin Impact, by HuaXuan",
-      link: "/process-zl"
-    },
-    {
-      id: 2,
       title: "Dan Heng IL",
       img: "/img/huaxuanimg/v2/Fanarts/DHIL.jpg",
       small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/dhil_sm.jpg)"},
       alt: "Digital Art of Dan Heng IL from the game Honkai Star Rail, by HuaXuan",
       link: "/process-dh"
+    },
+    {
+      id: 2,
+      title: "Zhongli",
+      img: "/img/huaxuanimg/v2/Fanarts/zhongli.jpg",
+      small: { backgroundImage: "url(/img/huaxuanimg/PixelSquares/zhongli-sm.jpg)" },
+      alt: "Digital Art of Zhong Li from the game Genshin Impact, by HuaXuan",
+      link: "/process-zl"
     },
       {
         id: 3,

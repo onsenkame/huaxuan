@@ -35,11 +35,11 @@ export const DrawProcessDH = (props) => {
         <div className="homepage">
           <section className="banner">
             <Container>
-              <Row className="rowpad">
+            <Row className="rowpad">
                 <Col className="speed-banner">
                   <div className="banner-text center">
-                    <h1 className="banner-textsm">Fanime '23 Individual Art Sample</h1>
-                    <h2 className="banner-textxsm">
+                    <h1 className="banner-text-d">Fanime '24 Individual Art Sample</h1>
+                    <h2 className="banner-textsm-d sm-space">
                       Honkai Starrail - Dan Heng
                     </h2>
                   </div>
@@ -47,10 +47,10 @@ export const DrawProcessDH = (props) => {
               </Row>
               <Row className="rowpad">
                 <Col xs={6} md={6} xl={6}>
-                  <h2>Illustration</h2>
+                  <h2 className="banner-textxsm-d">Illustration</h2>
                 </Col>
                 <Col xs={6} md={6} xl={6}>
-                  <h2>Development Speedpaint</h2>
+                  <h2 className="banner-textxsm-d">Development Speedpaint</h2>
                 </Col>
               </Row>
               {portPics.map((art) => (

@@ -27,13 +27,6 @@ export const DrawProcessHL = (props) => {
       small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/holl-small.jpg)"},
       alt: "Original digital Art, by HuaXuan",
     },
-    {
-      id: 2,
-      title: "Hollow",
-      img: "/img/huaxuanimg/HollowDeconstructed.JPG",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/holl-small.jpg)"},
-      alt: "Original digital Art, by HuaXuan",
-    },
   ];
 
   return (
@@ -42,29 +35,23 @@ export const DrawProcessHL = (props) => {
         <div className="homepage">
           <section className="banner">
             <Container>
-              <Row className="rowpad">
+            <Row className="rowpad">
                 <Col className="speed-banner">
                   <div className="banner-text center">
-                    <h1 className="banner-textsm">Fanime '23 Individual Art Sample</h1>
-                    <h2 className="banner-textxsm">
-                      Hollow
+                    <h1 className="banner-text-d">Fanime '24 Individual Art Sample</h1>
+                    <h2 className="banner-textsm-d sm-space">
+                      Original Art - Lonely Girl under Lanterns
                     </h2>
                   </div>
                 </Col>
               </Row>
-              <Row className="rowpad">
-                <Col xs={6} md={6} xl={6}>
-                  <h2>Illustration</h2>
-                </Col>
-                <Col xs={6} md={6} xl={6}>
-                  <h2>Development File</h2>
-                </Col>
-              </Row>
                 <Row>
                   {portPics.map((art) => (
-                  <Col xs={6} md={6} xl={6} key={art.id} className="colpad">
+                    <>
+                  <Col xs={1} md={1} xl={1}></Col>
+                  <Col xs={10} md={10} xl={10} key={art.id} className="colpad centered">
                     <div
-                      className="portfolio-effect-container blur-load"
+                      className="process-effect-container blur-load"
                       style={art.small}
                     >
                       <img
@@ -80,6 +67,8 @@ export const DrawProcessHL = (props) => {
                       />
                     </div>
                   </Col>
+                  <Col xs={1} md={1} xl={1}></Col>
+                  </>
                   ))}
                 </Row>
             </Container>

@@ -73,6 +73,13 @@ button:hover {
   border-radius: 1em 1em 1em 1em;
 }
 
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .nav-container {
   padding: 0 !important;
 }
@@ -179,7 +186,6 @@ col {
 
 .speed-banner::before {
   content: "";
-  background-image: url('/img/Portfolio_banner.jpg');
   background-size: cover;
   background-position: center;
   position: absolute;
@@ -288,7 +294,6 @@ col {
   translate: 0px 5px;
 
 }
-
 .banner-textsm {
   color: white;
   font-size: 1.2em;
@@ -298,6 +303,26 @@ col {
 .banner-textxsm {
   color: white;
   font-size: 1.1em;
+  text-align: center;
+  translate: 0px 5px;
+}
+
+.banner-text-d {
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  text-align: center;
+  translate: 0px 5px;
+
+}
+.banner-textsm-d {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  text-align: center;
+  translate: 0px 5px;
+}
+.banner-textxsm-d {
+  color: rgb(0, 0, 0);
+  font-size: 28px;
   text-align: center;
   translate: 0px 5px;
 }
@@ -394,6 +419,12 @@ col {
   overflow: hidden;
 }
 
+.process-effect-container {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+}
+
 .iframe-effect-container {
   position: relative;
   overflow: hidden;
@@ -443,6 +474,10 @@ col {
   padding-top: 3em;
 }
 
+.sm-space {
+  padding-top: .2em;
+}
+
 .ss-space {
   padding-top: 5em;
 }
@@ -470,7 +505,9 @@ body::before {
 .process-aspect {
   flex: 1;
   aspect-ratio: 2/3;
-  object-fit: fit;
+  object-fit: cover;
+  height: auto;
+  min-width: 100%;
 }
 
 .square-element {
