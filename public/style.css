@@ -454,6 +454,10 @@ col {
   transform: scale(1.2) translateY(20px);
 }
 
+.maxwidth {
+  max-width: 650px;
+}
+
 .colpad {
   padding: .5em;
 }

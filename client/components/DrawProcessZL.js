@@ -56,7 +56,7 @@ export const DrawProcessZL = (props) => {
                     >
                       <img
                         src={art.img}
-                        className="img-fluid process-aspect"
+                        className="img-fluid process-aspect maxwidth"
                         alt={"Responsive image" + art.alt}
                         loading="lazy"
                         onClick={() => {

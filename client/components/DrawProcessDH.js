@@ -40,7 +40,7 @@ export const DrawProcessDH = (props) => {
                   <div className="banner-text center">
                     <h1 className="banner-text-d">Fanime '24 Individual Art Sample</h1>
                     <h2 className="banner-textsm-d sm-space">
-                      Honkai Starrail - Dan Heng
+                      Honkai Star Rail - Dan Heng
                     </h2>
                   </div>
                 </Col>
