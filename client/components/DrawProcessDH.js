@@ -64,7 +64,7 @@ export const DrawProcessDH = (props) => {
               {portPics.map((art) => (
                   <Col xs={6} md={6} xl={6} key={art.id} className="colpad">
                     <div
-                      className="portfolio-effect-container blur-load"
+                      className="portfolio-effect-container process-aspect blur-load"
                       style={art.small}
                     >
                       <img
