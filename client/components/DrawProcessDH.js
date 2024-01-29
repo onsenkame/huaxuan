@@ -27,6 +27,13 @@ export const DrawProcessDH = (props) => {
       small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/dhil_sm.jpg)"},
       alt: "Digital Art of Dan Heng IL from the game Honkai Star Rail, by HuaXuan"
     },
+    {
+      id: 2,
+      title: "Dan Heng IL drawing process",
+      img: "/img/DHIL.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/dhil_sm.jpg)"},
+      alt: "Process of drawing the digital Art of Dan Heng IL from the game Honkai Star Rail, by HuaXuan"
+    },
   ];
 
   return (
@@ -50,11 +57,11 @@ export const DrawProcessDH = (props) => {
                   <h2 className="banner-textxsm-d">Illustration</h2>
                 </Col>
                 <Col xs={6} md={6} xl={6}>
-                  <h2 className="banner-textxsm-d">Development Speedpaint</h2>
+                  <h2 className="banner-textxsm-d">Development Process</h2>
                 </Col>
               </Row>
+              <Row>
               {portPics.map((art) => (
-                <Row>
                   <Col xs={6} md={6} xl={6} key={art.id} className="colpad">
                     <div
                       className="portfolio-effect-container blur-load"
@@ -73,19 +80,8 @@ export const DrawProcessDH = (props) => {
                       />
                     </div>
                   </Col>
-                  <Col xs={6} md={6} xl={6} className="colpad">
-                    <div className="iframe-effect-container">
-                      <iframe
-                        className="iframe-effect"
-                        src={`https://www.youtube.com/embed/BLQldqVvC78?autoplay=1&playlist=BLQldqVvC78&loop=1&controls=1&mute=1`}
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        title="DHIL 15 sec speedpaint"
-                      />
-                    </div>
-                  </Col>
-                </Row>
               ))}
+              </Row>
             </Container>
           </section>
           <Modal size="lg" show={show} onHide={handleClose} centered>
