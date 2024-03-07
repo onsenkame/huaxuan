@@ -170,7 +170,7 @@ col {
 .fanart-banner {
   position: relative;
   width: 100vw;
-  height: 28vh;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,6 +181,40 @@ col {
 }
 
 .fanart-banner:hover::before {
+  -webkit-filter: brightness(50%);
+}
+
+.port-banner::before {
+  content: "";
+  background-image: url('/img/Portfolio_banner.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.port-banner {
+  position: relative;
+  width: 100vw;
+  height: 28vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: .5em;
+  margin-right: .5em;
+  -webkit-filter: brightness(100%);
+
+}
+
+.port-banner:hover::before {
   -webkit-filter: brightness(50%);
 }
 
@@ -235,7 +269,7 @@ col {
 .merch-banner {
   position: relative;
   width: 100vw;
-  height: 28vh;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
