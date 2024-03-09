@@ -22,108 +22,129 @@ export const Home = (props) => {
   const fanart = [
     {
       id: 1,
-      title: "Mob",
-      img: "/img/huaxuanimg/v2/Fanarts/Mob.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/MobSq.jpg)"},
-      alt: "Digital Art inspired by the anime Mob Psycho, by HuaXuan",
-    },
-    {
-      id: 2,
-      title: "Kohaku",
-      img: "/img/huaxuanimg/v2/Fanarts/Kohaku.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/Kohaku-sm.jpg)"},
-      alt: "Digital Art from the movie Spirited Away, by HuaXuan"
-    },
-    {
-      id: 3,
-      title: "Zhongli",
-      img: "/img/huaxuanimg/v2/Fanarts/zhongli.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/zhongli-sm.jpg)"},
-      alt: "Digital Art of Zhong Li from the game Genshin Impact, by HuaXuan",
-    },
-    {
-      id: 4,
-      title: "Dan Heng IL",
-      img: "/img/huaxuanimg/v2/Fanarts/DHIL.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/dhil_sm.jpg)"},
-      alt: "Digital Art of Dan Heng IL from the game Honkai Star Rail, by HuaXuan"
-    },
-    {
-      id: 5,
-      title: "Shinobu",
-      img: "/img/huaxuanimg/v2/Fanarts/Shinobu.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/ShinobuSq.jpg)"},
-      alt: "Digital Art of Shinobu from the anime Demon Slayer, by HuaXuan"
-    },
-    {
-      id: 6,
-      title: "Freedom",
-      img: "/img/huaxuanimg/v2/Originals/Freedom.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/FreedomSq.jpg)"},
-      alt: "Original digital Art, by HuaXuan",
-    },
-    {
-      id: 7,
-      title: "Hololive Suisei",
-      img: "/img/huaxuanimg/v2/Fanarts/HololiveSuisei.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/HololiveSuisei_small.jpg)"},
-      alt: "Digital Art of vtuber Hoshimachi Suisei from Hololive, by HuaXuan"
-    },
-    {
-      id: 8,
-      title: "Howl",
-      img: "/img/huaxuanimg/v2/Fanarts/Howl.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/Howl-sm.jpg)"},
-      alt: "Digital Art from the movie Howl's Moving Castle, by HuaXuan",
-    },
-    {
-      id: 9,
-      title: "March 7th Bridal",
-      img: "/img/huaxuanimg/v2/Fanarts/march.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/march_sm.jpg)"},
-      alt: "Digital Art of March 7th from the game Honkai Star Rail, by HuaXuan"
-    },
-    {
-      id: 10,
-      title: "Hololive Ina",
-      img: "/img/huaxuanimg/v2/Fanarts/HololiveIna.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/HololiveIna_small.jpg)"},
-      alt: "Digital Art of vtuber Ninomae Ina'nis from Hololive, by HuaXuan"
-    },
-    {
-      id: 11,
-      title: "Daki and Gyutaro",
-      img: "/img/huaxuanimg/v2/Fanarts/KnYDakiandGyutaro.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/KnYDakiand Gyutaro_small.jpg)"},
-      alt: "Digital Art of Daki and Gyutaro from the anime Kimetsu no Yaiba, by HuaXuan",
-    },
-    {
-      id: 12,
-      title: "Nanachi",
-      img: "/img/huaxuanimg/v2/Fanarts/Nanachi.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/Nanachi_sm.jpg)"},
-      alt: "Digital Art of Nanachi from the anime Made in Abyss, by HuaXuan"
-    },
-    {
-      id: 13,
-      title: "Gilgamesh",
-      img: "/img/huaxuanimg/v2/Fanarts/FGO Gilgamesh 11x17 (print).jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/gil-small.jpg)"},
-      alt: "Digital Art of Gligamesh from the game Fate: Grand Order, by HuaXuan"
-    },
-    {
-      id: 14,
       title: "Hollow",
       img: "/img/huaxuanimg/v2/Originals/Hollow 9.16.22.jpg",
       small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/holl-small.jpg)"},
       alt: "Original digital Art, by HuaXuan",
     },
     {
-      id: 15,
+      id: 2,
+      title: "Fern",
+      img: "/img/huaxuanimg/v2/Fanarts/Fern.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/Fern_sq.jpg)"},
+      alt: "Digital Art of Fern from Frieren, by HuaXuan"
+    },
+    {
+      id: 3,
+      title: "Kohaku",
+      img: "/img/huaxuanimg/v2/Fanarts/Kohaku.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/Kohaku-sm.jpg)"},
+      alt: "Digital Art from the movie Spirited Away, by HuaXuan"
+    },
+    {
+      id: 4,
+      title: "Totoro and Ducks",
+      img: "/img/huaxuanimg/v2/Fanarts/totoro_ducks.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/totoro_sq.jpg)"},
+      alt: "Digital Art of Totoro and Ducks from My Neighbor Totoro, by HuaXuan"
+    },
+    {
+      id: 5,
+      title: "Zhongli",
+      img: "/img/huaxuanimg/v2/Fanarts/zhongli.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/zhongli-sm.jpg)"},
+      alt: "Digital Art of Zhong Li from the game Genshin Impact, by HuaXuan",
+    },
+    {
+      id: 6,
+      title: "Lunar New Year",
+      img: "/img/huaxuanimg/v2/Originals/LNY.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/LNY_sq.jpg)"},
+      alt: "Original digital Art, by HuaXuan",
+    },
+    {
+      id: 7,
+      title: "Dan Heng IL",
+      img: "/img/huaxuanimg/v2/Fanarts/DHIL.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/dhil_sm.jpg)"},
+      alt: "Digital Art of Dan Heng IL from the game Honkai Star Rail, by HuaXuan"
+    },
+    {
+      id: 8,
+      title: "March 7th Bridal",
+      img: "/img/huaxuanimg/v2/Fanarts/march.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/march_sm.jpg)"},
+      alt: "Digital Art of March 7th from the game Honkai Star Rail, by HuaXuan"
+    },
+    {
+      id: 9,
+      title: "Kafka",
+      img: "/img/huaxuanimg/v2/Fanarts/HSRKafka.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/hsrk_sm.jpg)"},
+      alt: "Digital Art of Kafka from the game Honkai Star Rail, by HuaXuan"
+    },
+    {
+      id: 10,
+      title: "Kiki",
+      img: "/img/huaxuanimg/v2/Fanarts/kiki.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/kiki_sq.jpg)"},
+      alt: "Digital Art of Kiki from the movie Kiki's Delivery Service, by HuaXuan",
+    },
+    {
+      id: 11,
+      title: "Freedom",
+      img: "/img/huaxuanimg/v2/Originals/Freedom.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/FreedomSq.jpg)"},
+      alt: "Original digital Art, by HuaXuan",
+    },
+    {
+      id: 12,
+      title: "Toji",
+      img: "/img/huaxuanimg/v2/Fanarts/Toji.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/Toji_sq.jpg)"},
+      alt: "Original digital Art, by HuaXuan",
+    },
+    {
+      id: 13,
       title: "Enkidu",
       img: "/img/huaxuanimg/v2/Fanarts/Enkidu.jpg",
       small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/Enkidu_small.jpg)"},
       alt: "Digital Art of Enkidu from the game Fate: Grand Order, by HuaXuan"
+    },
+    {
+      id: 14,
+      title: "Mob",
+      img: "/img/huaxuanimg/v2/Fanarts/Mob.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/MobSq.jpg)"},
+      alt: "Digital Art inspired by the anime Mob Psycho, by HuaXuan",
+    },
+    {
+      id: 15,
+      title: "Gilgamesh",
+      img: "/img/huaxuanimg/v2/Fanarts/FGO Gilgamesh 11x17 (print).jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/gil-small.jpg)"},
+      alt: "Digital Art of Gligamesh from the game Fate: Grand Order, by HuaXuan"
+    },
+    {
+      id: 16,
+      title: "Daki and Gyutaro",
+      img: "/img/huaxuanimg/v2/Fanarts/KnYDakiandGyutaro.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/KnYDakiand Gyutaro_small.jpg)"},
+      alt: "Digital Art of Daki and Gyutaro from the anime Kimetsu no Yaiba, by HuaXuan",
+    },
+    {
+      id: 17,
+      title: "Nanachi",
+      img: "/img/huaxuanimg/v2/Fanarts/Nanachi.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/Nanachi_sm.jpg)"},
+      alt: "Digital Art of Nanachi from the anime Made in Abyss, by HuaXuan"
+    },
+    {
+      id: 18,
+      title: "Shinobu",
+      img: "/img/huaxuanimg/v2/Fanarts/Shinobu.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/ShinobuSq.jpg)"},
+      alt: "Digital Art of Shinobu from the anime Demon Slayer, by HuaXuan"
     },
   ];
 
