@@ -71,10 +71,10 @@ export const Home = (props) => {
     },
     {
       id: 8,
-      title: "March 7th Bridal",
-      img: "/img/huaxuanimg/v2/Fanarts/march.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/march_sm.jpg)"},
-      alt: "Digital Art of March 7th from the game Honkai Star Rail, by HuaXuan"
+      title: "Red",
+      img: "/img/huaxuanimg/v2/Fanarts/red.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/red sq.jpg)"},
+      alt: "Digital Art of Trainer Red from Pokemon, by HuaXuan"
     },
     {
       id: 9,
@@ -127,17 +127,17 @@ export const Home = (props) => {
     },
     {
       id: 16,
-      title: "Daki and Gyutaro",
-      img: "/img/huaxuanimg/v2/Fanarts/KnYDakiandGyutaro.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/KnYDakiand Gyutaro_small.jpg)"},
-      alt: "Digital Art of Daki and Gyutaro from the anime Kimetsu no Yaiba, by HuaXuan",
+      title: "Mononoke",
+      img: "/img/huaxuanimg/v2/Fanarts/mononoke.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/mononoke sq.jpg)"},
+      alt: "Digital Art of Princess Mononoke from the movie Princess Mononoke, by HuaXuan",
     },
     {
       id: 17,
-      title: "Nanachi",
-      img: "/img/huaxuanimg/v2/Fanarts/Nanachi.jpg",
-      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/Nanachi_sm.jpg)"},
-      alt: "Digital Art of Nanachi from the anime Made in Abyss, by HuaXuan"
+      title: "Scaracat",
+      img: "/img/huaxuanimg/v2/Fanarts/scaracat.jpg",
+      small: {backgroundImage: "url(/img/huaxuanimg/PixelSquares/scaracat sq.jpg)"},
+      alt: "Digital Art of Scaramouche from Genshin Impact as a cat, by HuaXuan"
     },
     {
       id: 18,
